@@ -1,0 +1,104 @@
+@import './mixin';
+@import './variable';
+@import './root';
+@import './utility';
+
+header {
+   padding : $padding;
+   background-color: $firstBcgColor; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   .hamburger {
+       
+        div {
+            width: 2rem;
+            height: 0.25rem;
+            background-color: $white;
+            margin: 0.3rem;
+        }
+   }
+
+   .logo {
+       background-color: $white;
+       height: 3rem;
+       width: 3rem;
+       border-radius: 50%;
+   }
+}
+
+main {
+    .hero {
+        background-color: $firstBcgColor;
+        padding : $padding;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .heroContainer {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: $header_fontSize;
+            font-family: $header_font;
+            color: $white;
+        }
+
+        p {
+            color : $white;
+            font-family: $body_font;
+            font-size: $body_fontSize;
+            margin-top: .8em;
+        }
+
+        .heroImage {
+            width : 80vw;
+            height: 50vh;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+
+    .kenapaVct {
+        background-color: $secondBcgColor;
+        padding : $padding;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        h3 {
+            color : $dark_Purple;
+            font-size: $list_header;
+        }
+
+        p {
+            color : $dark_Purple;
+        }
+
+        li {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            margin-bottom: .5em;
+        }
+
+        ion-icon {
+            font-size: 1.3em;
+        }
+
+        a {
+            color : $dark_Purple;
+            font-size: $link_fontSize;
+        }
+    }
+}

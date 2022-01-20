@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  line-height: 1.3em;
+}
+
+.CTA_TEST {
+  margin-block: 1em;
+  background-color: #E8AA14;
+  color: #8860D0;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Arvo", serif;
+  font-size: 2em;
+  color: #fff;
+}
+
+.btnWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+header {
+  padding: 1em;
+  background-color: #5680E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .hamburger div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #fff;
+  margin: 0.3rem;
+}
+header .logo {
+  background-color: #fff;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+main .hero {
+  background-color: #5680E9;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .hero .heroContainer {
+  text-align: center;
+}
+main .hero h1 {
+  font-size: 2em;
+  font-family: "Arvo", serif;
+  color: #fff;
+}
+main .hero p {
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  margin-top: 0.8em;
+}
+main .hero .heroImage {
+  width: 80vw;
+  height: 50vh;
+}
+main .hero .heroImage img {
+  height: auto;
+  width: 100%;
+}
+main .kenapaVct {
+  background-color: #84CEEB;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .kenapaVct h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+main .kenapaVct h3 {
+  color: #0E103D;
+  font-size: 20px;
+}
+main .kenapaVct p {
+  color: #0E103D;
+}
+main .kenapaVct li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 0.5em;
+}
+main .kenapaVct ion-icon {
+  font-size: 1.3em;
+}
+main .kenapaVct a {
+  color: #0E103D;
+  font-size: 12px;
+}
