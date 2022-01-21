@@ -79,6 +79,7 @@ h2 {
   font-family: "Arvo", serif;
   font-size: 2em;
   color: #fff;
+  text-align: center;
 }
 
 .btnWrapper {
@@ -177,6 +178,7 @@ main .kenapaVct h2 {
 main .kenapaVct h3 {
   color: #0E103D;
   font-size: 20px;
+  margin-bottom: 0.5em;
 }
 main .kenapaVct p {
   color: #0E103D;
@@ -194,4 +196,51 @@ main .kenapaVct ion-icon {
 main .kenapaVct a {
   color: #0E103D;
   font-size: 12px;
+}
+main .testimony {
+  padding: 1em;
+  background-color: #5680E9;
+}
+main .testimony h2 {
+  margin-bottom: 0.5em;
+}
+main .testimony .testimonyList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+main .testimony .image {
+  width: 5.5em;
+  height: 5.5em;
+  border-radius: 50%;
+  background-color: #fff;
+}
+main .testimony .statement,
+main .testimony .work {
+  margin-top: 0.3em;
+}
+main .testProcess {
+  padding: 1em;
+  background-color: #84CEEB;
+}
+main .testProcess h2 {
+  margin-bottom: 0.5em;
+}
+main .testProcess li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 0.5em;
 }

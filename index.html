@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Barlow&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css" class="rel">
+    <!-- splide -->
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css" class="rel">
     <title>Yayasan Bina Muda Gemilang - Home Page</title>
 </head>
 <body>
@@ -80,13 +83,61 @@
             <div class="heroImg"></div>
         </section>
         <section class="testimony">
-            <!-- make a carousel here -->           
+            <h2>Apa kata mereka</h2>
+            <div class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <div class="testimonyList">
+                                  <div class="image"></div>
+                                  <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
+                                  <p class="work">Staff Puskesmas Balaraja</p>
+                              </div>
+                          </li>
+                          <li class="splide__slide">
+                              <div class="testimonyList">
+                                  <div class="image"></div>
+                                  <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
+                                  <p class="work">Staff Puskesmas Balaraja</p>
+                              </div>
+                          </li>
+                          <li class="splide__slide">
+                              <div class="testimonyList">
+                                  <div class="image"></div>
+                                  <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
+                                  <p class="work">Staff Puskesmas Balaraja</p>
+                              </div>
+                          </li>
+                          <li class="splide__slide">
+                              <div class="testimonyList">
+                                  <div class="image"></div>
+                                  <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
+                                  <p class="work">Staff Puskesmas Balaraja</p>
+                              </div>
+                          </li>
+                          <li class="splide__slide">
+                              <div class="testimonyList">
+                                  <div class="image"></div>
+                                  <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
+                                  <p class="work">Staff Puskesmas Balaraja</p>
+                              </div>
+                          </li>
+                          <li class="splide__slide">
+                              <div class="testimonyList">
+                                  <div class="image"></div>
+                                  <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
+                                  <p class="work">Staff Puskesmas Balaraja</p>
+                              </div>
+                          </li>
+                      </ul>
+                </div>
+            </div>       
         </section>
         <section class="testProcess">
             <h2>Siap test? Yu ketahui prosesnya</h2>
             <ul>
                 <li>
-                    <ion-icon name="ellipse"></ion-icon>
+                    <ion-icon name="document-text-outline"></ion-icon>
                     <div class="listInformation">
                         <h3>Isi form <span>disini</span></h3>
                         <p>klik <span>disini</span> untuk mengetahui siapa petugas lapangan terdekat.</p>
@@ -198,6 +249,17 @@
             </div>
         </div>
     </footer>
+    <!-- splide -->
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+            perPage: 3,
+            rewind : true,
+            } );
+            splide.mount();
+        });
+    </script>
+    <script src="./index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

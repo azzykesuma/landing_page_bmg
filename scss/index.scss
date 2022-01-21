@@ -80,6 +80,7 @@ main {
         h3 {
             color : $dark_Purple;
             font-size: $list_header;
+            margin-bottom: .5em;
         }
 
         p {
@@ -100,5 +101,49 @@ main {
             color : $dark_Purple;
             font-size: $link_fontSize;
         }
+    }
+
+    .testimony {
+        padding : $padding;
+        background-color: $firstBcgColor;
+
+        h2 {
+            margin-bottom: .5em;
+        }
+
+        .testimonyList {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .image {
+            width : 5.5em;
+            height : 5.5em;
+            border-radius: 50%;
+            background-color: $white;
+        }
+
+        .statement,
+        .work {
+            margin-top: .3em;
+        }
+    }
+    .testProcess {
+        padding : $padding;
+        background-color: $secondBcgColor;
+        
+        h2 {
+            margin-bottom: .5em;
+        }
+
+        li {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            margin-bottom: .5em;
+        }
+        
     }
 }
