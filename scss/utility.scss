@@ -14,6 +14,20 @@
     cursor: pointer;
 }
 
+.CTA_DONATE {
+    margin-block: 1em;
+    background-color: #540d6e;
+    color : $white;
+    padding : $paddingBtn;
+    border-radius: 5px;
+    border: none;
+    font-family: $body_font;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0px 11px 8px 0px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
 h2 {
     font-family: $header_font;
     font-size: $header_fontSize;
