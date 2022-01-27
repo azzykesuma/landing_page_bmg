@@ -11,14 +11,33 @@ header {
    justify-content: space-between;
 
    .hamburger {
-       
+       cursor: pointer;
+
         div {
             width: 2rem;
             height: 0.25rem;
             background-color: $white;
             margin: 0.3rem;
+            transform: rotate(0deg);
+            transition: 0.5s ease-in-out;
+        }
+        .one {
+            transform: rotate(40deg);
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            top : 8px
+        }
+        .two {
+            opacity: 0;
+        }
+        .three {
+            transform: rotate(-40deg);
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            top : -10px
         }
    }
+
 
    .logo {
        background-color: $white;
@@ -205,6 +224,10 @@ footer {
     padding : $padding;
     color : $white;
 
+    h4 {
+        font-family: $header_font;
+    }
+
     .footerNav {
         display : flex;
         align-items: center;
@@ -216,5 +239,37 @@ footer {
 
     .hiddenList {
         display: none;
+        margin-bottom: 1em;
+
+        li,a {
+            color : $white;
+            font-family: $body_font;
+        }
+        li {
+            margin-bottom: .5em;
+        }
+
+    }
+
+    #about-bmg-footer.active {
+        display: block;
+    }
+
+    #community-support-footer.active {
+        display: block;
+    }
+
+    #contactUs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap : 1em;
+
+        ion-icon {
+            font-size: 2em;
+        }
+    }
+    .hiddenList.open {
+        display: block;
     }
 }

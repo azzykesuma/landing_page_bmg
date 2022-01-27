@@ -111,6 +111,51 @@ h2 {
   gap: 10px;
 }
 
+.navBar {
+  -webkit-transform: translateX(-50em);
+          transform: translateX(-50em);
+  width: 250px;
+  position: absolute;
+  top: 4em;
+  background-color: #D0D6B5;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.navBar li, .navBar a {
+  color: #101935;
+  cursor: pointer;
+  font-family: "Barlow", sans-serif;
+}
+.navBar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding: 1em;
+  margin-inline: -10px;
+}
+.navBar li:hover {
+  background-color: #002626;
+  color: #fff;
+}
+.navBar li:hover a {
+  color: #fff;
+}
+
+.navBar.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
 header {
   padding: 1em;
   background-color: #5680E9;
@@ -124,11 +169,37 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header .hamburger {
+  cursor: pointer;
+}
 header .hamburger div {
   width: 2rem;
   height: 0.25rem;
   background-color: #fff;
   margin: 0.3rem;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+header .hamburger .one {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  top: 8px;
+}
+header .hamburger .two {
+  opacity: 0;
+}
+header .hamburger .three {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  top: -10px;
 }
 header .logo {
   background-color: #fff;
@@ -320,6 +391,9 @@ footer {
   padding: 1em;
   color: #fff;
 }
+footer h4 {
+  font-family: "Arvo", serif;
+}
 footer .footerNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,4 +410,36 @@ footer .footerNav {
 }
 footer .hiddenList {
   display: none;
+  margin-bottom: 1em;
+}
+footer .hiddenList li, footer .hiddenList a {
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+}
+footer .hiddenList li {
+  margin-bottom: 0.5em;
+}
+footer #about-bmg-footer.active {
+  display: block;
+}
+footer #community-support-footer.active {
+  display: block;
+}
+footer #contactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+footer #contactUs ion-icon {
+  font-size: 2em;
+}
+footer .hiddenList.open {
+  display: block;
 }

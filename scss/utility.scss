@@ -40,3 +40,43 @@ h2 {
     align-items: center;
     gap : 10px;
 }
+
+.navBar {
+    transform: translateX(-50em);
+    width: 250px;
+    position: absolute;
+    top: 4em;
+    background-color: #D0D6B5;
+    padding : $padding;
+    transition: all 0.5s ease-in-out;
+
+    li,a {
+        color : #101935;
+        cursor: pointer;
+        font-family: $body_font;
+    }
+
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+        transition: 0.5s ease-in-out;
+        padding : $padding;
+        margin-inline : -10px;
+    }
+
+    li:hover {
+        background-color: #002626;
+        color: $white;
+
+        a {
+            color : $white;
+        }
+    }
+}
+
+.navBar.active {
+    transform: translateX(0em);
+}
