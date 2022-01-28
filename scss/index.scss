@@ -238,8 +238,11 @@ footer {
     }
 
     .hiddenList {
-        display: none;
+        height : 0;
+        opacity: 0;
+        transition: height 0.5s, opacity .3s ease-in-out .5s;
         margin-bottom: 1em;
+        visibility: hidden;
 
         li,a {
             color : $white;
@@ -252,11 +255,21 @@ footer {
     }
 
     #about-bmg-footer.active {
-        display: block;
+        height : 120px;
+        opacity: 1;
+        visibility: visible;
     }
 
     #community-support-footer.active {
-        display: block;
+        height : 80px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #contact-us-footer.active {
+        height : 30px;
+        opacity: 1;
+        visibility: visible;
     }
 
     #contactUs {

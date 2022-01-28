@@ -12,6 +12,11 @@
     letter-spacing: 2px;
     box-shadow: 0px 11px 8px 0px rgba(0,0,0,0.4);
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.CTA_TEST:hover {
+    transform: translateY(10px);
+    box-shadow: 0px 11px 8px 0px inset rgba(0,0,0,0.2);
 }
 
 .CTA_DONATE {
@@ -26,6 +31,11 @@
     letter-spacing: 2px;
     box-shadow: 0px 11px 8px 0px rgba(0,0,0,0.4);
     cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.CTA_DONATE:hover {
+    transform: translateY(10px);
+    box-shadow: 0px 11px 8px 0px inset rgba(0,0,0,0.2);
 }
 
 h2 {

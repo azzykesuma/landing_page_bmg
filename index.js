@@ -41,20 +41,22 @@ footerNav.forEach(item => {
         if(target === footerNav[1]) {
             commSupport.classList.toggle('active');
             if(commSupport.classList.contains('active')){
-                about.innerHTML = '<ion-icon name="chevron-up-outline"></ion-icon>';
+                support.innerHTML = '<ion-icon name="chevron-up-outline"></ion-icon>';
             } else {
-                about.innerHTML = '<ion-icon name="chevron-down-outline"></ion-icon>';
+                support.innerHTML = '<ion-icon name="chevron-down-outline"></ion-icon>';
             }
         } else {
             support.innerHTML = '<ion-icon name="chevron-down-outline"></ion-icon>';
-            commSupport.style.display = 'none';
         }
         if(target === footerNav[2]) {
-            contactUs.style.display = 'block';
-            contact.innerHTML = '<ion-icon name="chevron-up-outline"></ion-icon>';
-        } else {
+            contactUs.classList.toggle('active');
+            if(contactUs.classList.contains('active')){
+                contact.innerHTML = '<ion-icon name="chevron-up-outline"></ion-icon>';
+            } else {
             contact.innerHTML = '<ion-icon name="chevron-down-outline"></ion-icon>';
-            contactUs.style.display = 'none';
+        }} 
+        else {
+            contact.innerHTML = '<ion-icon name="chevron-down-outline"></ion-icon>';
         }
     })
 })
