@@ -2,21 +2,49 @@
 const hamburger = document.querySelector('.hamburger');
 const navBar = document.querySelector('.navBar');
 const list = navBar.getElementsByTagName('li');
-
+const mainNav = document.getElementById('mainNav');
+const close = document.querySelector('.close');
 
 hamburger.addEventListener('click', () => {
-    navBar.classList.toggle('active');
-    const divs = hamburger.getElementsByTagName('div');
-    if(navBar.classList.contains('active')) {
-        divs[0].classList.add('one')
-        divs[1].classList.add('two')
-        divs[2].classList.add('three')
-    } else {
-        divs[0].classList.remove('one')
-        divs[1].classList.remove('two')
-        divs[2].classList.remove('three')
-    }
+    navBar.classList.add('active');
 })
+
+close.addEventListener('click',() => {
+    navBar.classList.remove('active');
+})
+// sub navbar function
+const navAbout = document.getElementById('navAbout');
+const navTest = document.getElementById('navTest');
+const navInfo = document.getElementById('navInfo');
+const nav__about = document.getElementById('nav__about');
+const nav__Test = document.getElementById('nav__Test');
+const nav__Information = document.getElementById('nav__Information');
+const back = document.querySelectorAll('.back');
+
+navAbout.addEventListener('click',() => {
+    nav__about.classList.add('active');
+    mainNav.style.display = 'none';
+})
+navTest.addEventListener('click',() => {
+    nav__Test.classList.add('active');
+    mainNav.style.display = 'none';
+})
+navInfo.addEventListener('click',() => {
+    nav__Information.classList.add('active');
+    mainNav.style.display = 'none';
+})
+
+back.forEach(btn => {
+    btn.addEventListener('click',(e) => {
+        const target = e.target;
+        const parent = target.parentNode.parentNode;
+        parent.classList.remove('active');
+        mainNav.style.display = 'block';
+    })
+})
+
+// CTA function
+const cta = document.querySelectorAll('.CTA_TEST')
 
 // footer bar function
 const footerNav = document.querySelectorAll('.footerNav');

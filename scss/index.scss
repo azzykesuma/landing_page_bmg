@@ -47,6 +47,56 @@ header {
    }
 }
 
+.formContainer {
+    position: fixed;
+    top: 10em;
+    background-color: #101935;
+    z-index: 3;
+
+    .formHeader {
+        background-color: #F3F643;
+        padding : 5px;
+        text-align: center;
+    }
+
+    form {
+        padding : $padding;
+        color : $white;
+
+        .formItem {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;
+        }
+        
+        label {
+            margin-bottom: .5em;
+        }
+
+        input {
+            width : 100%;
+            background-color: transparent;
+            border : none;
+            border-bottom: 1px solid $white;
+        }
+
+        input::placeholder {
+            color: $white;
+        }
+
+        .radioItem {
+            display: flex;
+            align-items: center;
+            gap : 1em;
+
+            div {
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+
 main {
     .hero {
         background-color: $firstBcgColor;

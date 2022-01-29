@@ -26,13 +26,35 @@
         <div class="logo"></div>
     </header>
     <div class="navBar">
-        <ul>
+        <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+        <ul id="mainNav">
             <li><a href="#">Halaman Utama</a></li>
-            <li>Tentang BMG <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
-            <li>Layanan Test <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
+            <li id="navAbout">Tentang BMG <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
+            <li id="navTest">Layanan Test <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
             <li><a href="#">Program</a></li>
-            <li>Pusat Informasi <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
+            <li id="navInfo">Pusat Informasi <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
             <li>Donasi</li>
+        </ul>
+        <ul id="nav__about">
+            <div class="back"><ion-icon name="chevron-back-outline"></ion-icon></div>
+            <li><a href="#">Visi Misi</a></li>
+            <li><a href="#">Pendiri Yayasan</a></li>
+            <li><a href="#">Pengalaman Pengelolaan Program</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="#">Penghargaan dan Legalitas</a></li>
+        </ul>
+        <ul id="nav__Test">
+            <div class="back"><ion-icon name="chevron-back-outline"></ion-icon></div>
+            <li><a href="#">Test VCT</a></li>
+            <li><a href="#">Test IMS</a></li>
+            <li><a href="#">Test TB</a></li>
+        </ul>
+        <ul id="nav__Information">
+            <div class="back"><ion-icon name="chevron-back-outline"></ion-icon></div>
+            <li><a href="#">Human Immunodeficiency Virus (HIV)</a></li>
+            <li><a href="#">Infeksi Menular Seksual (IMS)</a></li>
+            <li><a href="#">Tuberkulosis (TB)</a></li>
+            <li><a href="#">Hepatitis</a></li>
         </ul>
     </div>
     <main>
@@ -49,6 +71,64 @@
                 <img src="./asset/hero_Image.jpg" alt="">
             </div>
         </section>
+        <div class="formContainer">
+            <div class="formHeader">
+                <p>
+                    Saat ini BMG hanya memberikan dukungan test di area Kab.Tangerang, 
+                    Kota Tangerang, Serang dan Cilegon
+                </p>
+            </div>
+            <form action="">
+                <div class="formItem">
+                    <label for="client_name">Inisial Nama</label>
+                    <input type="text"
+                    placeholder="Masukan 4 karakter awal nama anda, cont : AHMA" 
+                    />
+                </div>
+                <div class="formItem">
+                    <label for="client_number">Nomor HP</label>
+                    <input type="number"
+                    placeholder="harap masukan nomor HP yang bisa dihubungi" 
+                    />
+                </div>
+                <div class="formItem">
+                    <label for="area">Kabupaten :</label>
+                    <select name="area" id="area">
+                        <option value="KotaTangerang">Kota Tangerang</option>
+                        <option value="KabTangerang">Kab Tangerang</option>
+                        <option value="KabSerang">Kab Serang</option>
+                        <option value="KotaSerang">Kota Serang</option>
+                        <option value="KotaCilegon">Kota Cilegon</option>
+                    </select>
+                </div>
+                <div class="formItem">
+                    <p>apakah anda sudah tes dalam 6 bulan terakhir ? <span><ion-icon name="help-circle-outline"></ion-icon></span></p>
+                    <div class="radioItem">
+                        <div>
+                            <input type="radio" id="ya" name="eligibleTest" value="yes">
+                            <label for="ya">Ya</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="tidak" name="eligibleTest" value="no">
+                            <label for="tidak">Tidak</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="formItem">
+                    <p>apakah anda memiliki KTP ? <span><ion-icon name="help-circle-outline"></ion-icon></span></p>
+                    <div class="radioItem">
+                        <div>
+                            <input type="radio" id="punya" name="KtpOwnership" value="punya">
+                            <label for="punya">ya,punya</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="tidakPunya" name="KtpOwnership" value="tidak punya">
+                            <label for="tidakPunya">Tidak Punya</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
         <section class="kenapaVct">
             <h2>Kenapa harus VCT</h2>
             <ul>

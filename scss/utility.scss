@@ -54,11 +54,29 @@ h2 {
 .navBar {
     transform: translateX(-50em);
     width: 250px;
-    position: absolute;
-    top: 4em;
+    height: 100%;
+    top: 0;
     background-color: #D0D6B5;
     padding : $padding;
     transition: all 0.5s ease-in-out;
+    position: fixed;
+    z-index: 2;
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
+
+        ion-icon {
+            font-size: 2em;
+        }
+    }
+
+    ul {
+        padding-top: 1.2em;
+    }
 
     li,a {
         color : #101935;
@@ -87,6 +105,40 @@ h2 {
     }
 }
 
+#nav__about,
+#nav__Test,
+#nav__Information {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    top : 0;
+    transform: translateX(-50em);
+    transition: all 0.5s ease-in-out;
+    background-color: #D0D6B5;
+    padding-top : 3em;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+
+    ion-icon {
+        font-size: 2em;
+        margin-top: .5em;
+    }
+}
+
 .navBar.active {
+    transform: translateX(0em);
+}
+#nav__about.active {
+    transform: translateX(0em);
+}
+#nav__Test.active {
+    transform: translateX(0em);
+}
+#nav__Information.active {
     transform: translateX(0em);
 }

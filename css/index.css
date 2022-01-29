@@ -133,12 +133,27 @@ h2 {
   -webkit-transform: translateX(-50em);
           transform: translateX(-50em);
   width: 250px;
-  position: absolute;
-  top: 4em;
+  height: 100%;
+  top: 0;
   background-color: #D0D6B5;
   padding: 1em;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  position: fixed;
+  z-index: 2;
+}
+.navBar .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.navBar .close ion-icon {
+  font-size: 2em;
+}
+.navBar ul {
+  padding-top: 1.2em;
 }
 .navBar li, .navBar a {
   color: #101935;
@@ -169,7 +184,48 @@ h2 {
   color: #fff;
 }
 
+#nav__about,
+#nav__Test,
+#nav__Information {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  -webkit-transform: translateX(-50em);
+          transform: translateX(-50em);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #D0D6B5;
+  padding-top: 3em;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.back ion-icon {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
 .navBar.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+#nav__about.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+#nav__Test.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+#nav__Information.active {
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
@@ -224,6 +280,73 @@ header .logo {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
+}
+
+.formContainer {
+  position: fixed;
+  top: 10em;
+  background-color: #101935;
+  z-index: 3;
+}
+.formContainer .formHeader {
+  background-color: #F3F643;
+  padding: 5px;
+  text-align: center;
+}
+.formContainer form {
+  padding: 1em;
+  color: #fff;
+}
+.formContainer form .formItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+}
+.formContainer form label {
+  margin-bottom: 0.5em;
+}
+.formContainer form input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.formContainer form input::-webkit-input-placeholder {
+  color: #fff;
+}
+.formContainer form input::-moz-placeholder {
+  color: #fff;
+}
+.formContainer form input:-ms-input-placeholder {
+  color: #fff;
+}
+.formContainer form input::-ms-input-placeholder {
+  color: #fff;
+}
+.formContainer form input::placeholder {
+  color: #fff;
+}
+.formContainer form .radioItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.formContainer form .radioItem div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 main .hero {
