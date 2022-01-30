@@ -55,6 +55,13 @@ a {
 h1,
 h2,
 h3,
+h4 {
+  font-family: "Arvo", serif, serif;
+}
+
+h1,
+h2,
+h3,
 h4,
 p {
   line-height: 1.3em;
@@ -283,8 +290,7 @@ header .logo {
 }
 
 .formContainer {
-  position: fixed;
-  top: 10em;
+  display: none;
   background-color: #101935;
   z-index: 3;
 }
@@ -296,6 +302,7 @@ header .logo {
 .formContainer form {
   padding: 1em;
   color: #fff;
+  position: relative;
 }
 .formContainer form .formItem {
   display: -webkit-box;
@@ -311,7 +318,6 @@ header .logo {
   margin-bottom: 0.5em;
 }
 .formContainer form input {
-  width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
@@ -347,6 +353,38 @@ header .logo {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.formContainer form button {
+  margin-block: 1em;
+  background-color: #E8AA14;
+  color: #8860D0;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.formContainer form button:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-box-shadow: 0px 11px 8px 0px inset rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 11px 8px 0px inset rgba(0, 0, 0, 0.2);
+}
+.formContainer form #close {
+  margin-left: auto;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+.formContainer.open {
+  display: block;
 }
 
 main .hero {
@@ -531,6 +569,7 @@ footer {
   background-color: #1B122B;
   padding: 1em;
   color: #fff;
+  height: 100%;
 }
 footer h4 {
   font-family: "Arvo", serif;

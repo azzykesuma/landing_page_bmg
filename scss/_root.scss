@@ -51,6 +51,13 @@ a {
 h1,
 h2,
 h3,
+h4 {
+	font-family: $header_font, serif;
+}
+
+h1,
+h2,
+h3,
 h4,
 p {
 	line-height: $line-height;

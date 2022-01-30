@@ -88,3 +88,18 @@ footerNav.forEach(item => {
         }
     })
 })
+// form function
+const testBtn = document.querySelectorAll('.CTA_TEST')
+const form = document.querySelector('.formContainer');
+const closeBtn = document.querySelector('.close');
+
+testBtn.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        form.classList.add('open')
+    })
+})
+
+closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    form.classList.remove('open')
+})

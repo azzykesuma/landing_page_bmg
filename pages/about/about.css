@@ -1,0 +1,212 @@
+.CTA_TEST {
+  margin-block: 1em;
+  background-color: #E8AA14;
+  color: #8860D0;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.CTA_TEST:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-box-shadow: 0px 11px 8px 0px inset rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 11px 8px 0px inset rgba(0, 0, 0, 0.2);
+}
+
+.CTA_DONATE {
+  margin-block: 1em;
+  background-color: #540d6e;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.CTA_DONATE:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-box-shadow: 0px 11px 8px 0px inset rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 11px 8px 0px inset rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-family: "Arvo", serif;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.btnWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.navBar {
+  -webkit-transform: translateX(-50em);
+          transform: translateX(-50em);
+  width: 250px;
+  height: 100%;
+  top: 0;
+  background-color: #D0D6B5;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  z-index: 2;
+}
+.navBar .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.navBar .close ion-icon {
+  font-size: 2em;
+}
+.navBar ul {
+  padding-top: 1.2em;
+}
+.navBar li, .navBar a {
+  color: #101935;
+  cursor: pointer;
+  font-family: "Barlow", sans-serif;
+}
+.navBar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding: 1em;
+  margin-inline: -10px;
+}
+.navBar li:hover {
+  background-color: #002626;
+  color: #fff;
+}
+.navBar li:hover a {
+  color: #fff;
+}
+
+#nav__about,
+#nav__Test,
+#nav__Information {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  -webkit-transform: translateX(-50em);
+          transform: translateX(-50em);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #D0D6B5;
+  padding-top: 3em;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.back ion-icon {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+.navBar.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+#nav__about.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+#nav__Test.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+#nav__Information.active {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.visiMisi {
+  background-color: #5680E9;
+  padding: 1em;
+}
+.visiMisi h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.visiMisi p {
+  text-align: center;
+}
+
+.founder {
+  background-color: #84CEEB;
+  padding: 1em;
+}
+.founder .founderItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.founder .founderItem .image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: red;
+}
+.founder .founderItem p {
+  font-size: 0.9em;
+}

@@ -48,8 +48,7 @@ header {
 }
 
 .formContainer {
-    position: fixed;
-    top: 10em;
+    display: none;
     background-color: #101935;
     z-index: 3;
 
@@ -62,6 +61,7 @@ header {
     form {
         padding : $padding;
         color : $white;
+        position: relative;
 
         .formItem {
             display: flex;
@@ -74,7 +74,6 @@ header {
         }
 
         input {
-            width : 100%;
             background-color: transparent;
             border : none;
             border-bottom: 1px solid $white;
@@ -94,7 +93,35 @@ header {
                 align-items: flex-start;
             }
         }
+        button {
+            margin-block: 1em;
+            background-color: $btnColorBcg;
+            color : #8860D0;
+            padding : $paddingBtn;
+            border-radius: 5px;
+            border: none;
+            font-family: $body_font;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0px 11px 8px 0px rgba(0,0,0,0.4);
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+        button:hover{
+            transform: translateY(10px);
+            box-shadow: 0px 11px 8px 0px inset rgba(0,0,0,0.2);
+        }
+        #close {
+            margin-left: auto;
+            position : absolute;
+            bottom: 15px;
+            right: 10px;
+        }
     }
+}
+
+.formContainer.open {
+    display: block;
 }
 
 main {
@@ -273,6 +300,7 @@ footer {
     background-color: $footerBcg;
     padding : $padding;
     color : $white;
+    height : 100%;
 
     h4 {
         font-family: $header_font;
