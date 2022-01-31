@@ -237,6 +237,31 @@ h2 {
           transform: translateX(0em);
 }
 
+.dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2em;
+  width: 3em;
+  padding: 3px;
+  border-radius: 1em;
+  background-color: #fff;
+  margin-right: 0.5em;
+  font-size: 1em;
+  background-color: #D72638;
+  color: #fff;
+}
+
+.margin {
+  margin-left: 2em;
+}
+
 header {
   padding: 1em;
   background-color: #5680E9;

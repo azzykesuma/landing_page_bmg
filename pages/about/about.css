@@ -164,6 +164,31 @@ h2 {
           transform: translateX(0em);
 }
 
+.dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2em;
+  width: 3em;
+  padding: 3px;
+  border-radius: 1em;
+  background-color: #fff;
+  margin-right: 0.5em;
+  font-size: 1em;
+  background-color: #D72638;
+  color: #fff;
+}
+
+.margin {
+  margin-left: 2em;
+}
+
 h1 {
   font-size: 2em;
 }
@@ -189,6 +214,10 @@ h2 {
   background-color: #84CEEB;
   padding: 1em;
 }
+.founder h2 {
+  color: #0E103D;
+  margin-bottom: 1em;
+}
 .founder .founderItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,4 +238,49 @@ h2 {
 }
 .founder .founderItem p {
   font-size: 0.9em;
+}
+
+.workExperience {
+  padding: 1em;
+  background-color: #5680E9;
+}
+.workExperience .expItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.struktur {
+  padding: 1em;
+  background-color: #84CEEB;
+}
+.struktur h2 {
+  color: #0E103D;
+}
+.struktur .box {
+  width: 100%;
+}
+.struktur img {
+  width: 100%;
+}
+
+.award {
+  padding: 1em;
+  background-color: #5680E9;
+}
+.award h2 {
+  margin-bottom: 0.8em;
+}
+.award .awardItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.8em;
 }

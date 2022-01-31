@@ -30,6 +30,11 @@ h2 {
     background-color: $secondBcgColor;
     padding : $padding;
 
+    h2 {
+        color : $dark_Purple;
+        margin-bottom: 1em;
+    }
+
     .founderItem {
         display: flex;
         flex-direction: column;
@@ -45,5 +50,47 @@ h2 {
         p {
             font-size: .9em;
         }
+    }
+}
+
+.workExperience {
+    padding : $padding;
+    background-color: $firstBcgColor;
+
+    .expItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: .5em;
+    }
+}
+
+.struktur {
+    padding : $padding;
+    background-color: $secondBcgColor;
+
+    h2 {
+        color : $dark_Purple;
+    }
+    .box {
+        width : 100%
+    }
+
+    img {
+        width : 100%;
+    }
+}
+
+.award {
+    padding : $padding;
+    background-color: $firstBcgColor;
+
+    h2 {
+        margin-bottom: .8em;
+    }
+
+    .awardItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: .8em;
     }
 }

@@ -142,3 +142,22 @@ h2 {
 #nav__Information.active {
     transform: translateX(0em);
 }
+
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width : 3em;
+    padding : 3px;
+    border-radius : 1em;
+    background-color: $white;
+    margin-right: .5em;
+    font-size: 1em;
+    background-color: #D72638;
+    color: $white;
+}
+
+.margin {
+    margin-left: 2em;
+}
