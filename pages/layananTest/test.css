@@ -1,0 +1,187 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Arvo", serif, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  line-height: 1.3em;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+.formTest {
+  padding: 1em;
+  background-color: #5680E9;
+}
+.formTest h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1em;
+}
+.formTest h2 {
+  font-size: 1.5em;
+}
+.formTest form {
+  margin-top: 1em;
+  width: 100%;
+}
+.formTest .formItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+.formTest .formItem label {
+  margin-bottom: 0.5em;
+  font-family: "Barlow", sans-serif;
+}
+.formTest .formItem input {
+  padding: 0.5em;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 0.8em;
+}
+.formTest .formItem .radioItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.formTest .formItem .radioItem div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.formTest button {
+  margin-block: 1em;
+  background-color: #E8AA14;
+  color: #8860D0;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.cekPuskesmas {
+  padding: 1em;
+  background-color: #84CEEB;
+}
+.cekPuskesmas h2 {
+  margin-bottom: 1em;
+}
+.cekPuskesmas p {
+  color: #0E103D;
+  margin-bottom: 1em;
+}
+.cekPuskesmas .selection {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+.cekPuskesmas .selection select {
+  padding: 5px;
+  font-family: "Barlow", sans-serif;
+  background-color: #E8AA14;
+  border-radius: 5px;
+  border: none;
+}
+.cekPuskesmas button {
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cekPuskesmas button ion-icon {
+  font-size: 3em;
+  cursor: pointer;
+}

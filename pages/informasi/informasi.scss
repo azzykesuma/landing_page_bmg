@@ -1,0 +1,41 @@
+@import '../../scss/mixin';
+@import '../../scss/root';
+@import '../../scss/variable';
+
+
+
+.hiv {
+    padding : $padding;
+    background-color: $firstBcgColor;
+
+    h1 {
+        font-size : $header_fontSize;
+        text-align: center;
+        color : $white;
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        text-align: left;
+    }
+    
+    p {
+        color : $white;
+        margin-bottom: 1em;
+    }
+
+    .imageCarousel {
+        
+        .listContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image {
+            background-color: red;
+            height : 7em;
+            width : 7em;
+        }
+    }
+}
