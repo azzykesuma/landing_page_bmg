@@ -25,17 +25,52 @@
         margin-bottom: 1em;
     }
 
-    .imageCarousel {
-        
-        .listContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .image {
-            background-color: red;
-            height : 7em;
-            width : 7em;
-        }
+}
+
+.ims {
+    padding : $padding;
+    background-color: $secondBcgColor;
+
+    h2 {
+        color : $dark_Purple;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    p {
+        color : $dark_Purple;
+        margin-bottom: 1em;
+    }
+}
+
+.tb {
+    padding : $padding;
+    background-color: $firstBcgColor;
+
+    
+    h2 {
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    p {
+        color : $white;
+        margin-bottom: 1em;
+    }
+}
+
+.hepatitis {
+    padding : $padding;
+    background-color: $secondBcgColor; 
+
+    h2 {
+        color : $dark_Purple;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    p {
+        color : $dark_Purple;
+        margin-bottom: 1em;
     }
 }

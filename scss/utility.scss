@@ -162,3 +162,17 @@ h2 {
 .margin {
     margin-left: 2em;
 }
+
+.imageCarousel {
+        
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        background-color: red;
+        height : 7em;
+        width : 7em;
+    }
+}

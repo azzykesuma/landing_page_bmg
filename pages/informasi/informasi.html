@@ -32,23 +32,22 @@
             <li><a href="../../index.html">Halaman Utama</a></li>
             <li id="navAbout">Tentang BMG <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
             <li id="navTest">Layanan Test <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
-            <li><a href="#">Program</a></li>
             <li id="navInfo">Pusat Informasi <span><ion-icon name="chevron-forward-outline"></ion-icon></span></li>
-            <li>Donasi</li>
+            <li><a href="../donasi/donasi.html">Donasi</a></li>
         </ul>
         <ul id="nav__about">
             <div class="back"><ion-icon name="chevron-back-outline"></ion-icon></div>
-            <li><a href="#visiMisi">Visi Misi</a></li>
-            <li><a href="#founder">Pendiri Yayasan</a></li>
-            <li><a href="#workExperience">Pengalaman Pengelolaan Program</a></li>
-            <li><a href="#struktur">Struktur Organisasi</a></li>
-            <li><a href="#award">Penghargaan dan Legalitas</a></li>
+            <li><a href="../about/about.html#visiMisi">Visi Misi</a></li>
+            <li><a href="../about/about.html#founder">Pendiri Yayasan</a></li>
+            <li><a href="../about/about.html#workExperience">Pengalaman Pengelolaan Program</a></li>
+            <li><a href="../about/about.html#struktur">Struktur Organisasi</a></li>
+            <li><a href="../about/about.html#award">Penghargaan dan Legalitas</a></li>
         </ul>
         <ul id="nav__Test">
             <div class="back"><ion-icon name="chevron-back-outline"></ion-icon></div>
-            <li><a href="#">Test VCT</a></li>
-            <li><a href="#">Test IMS</a></li>
-            <li><a href="#">Test TB</a></li>
+            <li><a href="../layananTest/test.html">Test VCT</a></li>
+            <li><a href="../layananTest/test.html">Test IMS</a></li>
+            <li><a href="../layananTest/test.html">Test TB</a></li>
         </ul>
         <ul id="nav__Information">
             <div class="back"><ion-icon name="chevron-back-outline"></ion-icon></div>
@@ -59,7 +58,7 @@
         </ul>
     </div>
     <main>
-        <div class="hiv">
+        <div class="hiv" id="hiv">
             <h1>Penyakit beresiko untuk komunitas</h1>
             <h2>1. HIV</h2>
             <p>
@@ -75,14 +74,20 @@
                                   <div class="image"></div>
                                   <div class="caption">this is caption</div>
                               </li>
-                              <li class="splide__slide">Slide 02</li>
-                              <li class="splide__slide">Slide 03</li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
                           </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ims">
+        <div class="ims" id="ims">
             <h2>2. IMS</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestiae tempora doloribus. 
@@ -90,9 +95,27 @@
                 et quae pariatur eum ab natus voluptatibus id, ad delectus dolorem.
             </p>
             <div class="imageCarousel">
-                <!-- make slideshow here -->
+                <div class="splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                          </ul>
+                    </div>
+                </div>
             </div> 
-        <div class="tb">
+        </div>
+        <div class="tb" id="tb">
             <h2>3. Tuberculosis (TB)</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestiae tempora doloribus. 
@@ -100,10 +123,27 @@
                 et quae pariatur eum ab natus voluptatibus id, ad delectus dolorem.
             </p>
             <div class="imageCarousel">
-                <!-- make slideshow here -->
+                <div class="splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                          </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="hepatitis">
+        <div class="hepatitis" id="hepatitis">
             <h2>4. Hepatitis</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestiae tempora doloribus. 
@@ -111,7 +151,24 @@
                 et quae pariatur eum ab natus voluptatibus id, ad delectus dolorem.
             </p>
             <div class="imageCarousel">
-                <!-- make slideshow here -->
+                <div class="splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                              <li class="splide__slide listContainer">
+                                  <div class="image"></div>
+                                  <div class="caption">this is caption</div>
+                              </li>
+                          </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
