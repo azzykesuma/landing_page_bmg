@@ -1,3 +1,22 @@
+.heroImage {
+  max-width: 80vw;
+  height: 50vh;
+}
+.heroImage img {
+  height: auto;
+  width: 300px;
+}
+@media screen and (min-width: 768px) {
+  .heroImage img {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heroImage {
+    width: 50%;
+  }
+}
+
 .CTA_TEST {
   margin-block: 1em;
   background-color: #E8AA14;

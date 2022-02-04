@@ -1,0 +1,7 @@
+@import './variable';
+
+@mixin mQ($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }        
+}

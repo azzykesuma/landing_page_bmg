@@ -36,7 +36,43 @@ header {
             position: relative;
             top : -10px
         }
+        
+        @include mQ($tablet) {
+            display: none;
+        }
    }
+
+   .tabletNav {
+        display: none;
+        ul {
+            display: flex;
+            align-items: center;
+            gap : .5em;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap : .3em;
+            color :$white;
+            border-right : 1px solid $white;
+            padding-right: 5px;
+            height : 2em;
+            cursor: pointer;
+        }
+
+        a {
+            color : $white;
+        }
+
+        ion-icon {
+            margin-top: 5px;
+        }
+        
+        @include mQ($tablet) {
+            display: block;
+        }
+    }
 
 
    .logo {
@@ -150,13 +186,12 @@ main {
             margin-top: .8em;
         }
 
-        .heroImage {
-            width : 80vw;
-            height: 50vh;
+        @include mQ($tablet) {
+            flex-direction: row-reverse;
+            gap : 1em;
 
-            img {
-                height: auto;
-                width: 100%;
+            .heroContainer {
+                text-align: left;
             }
         }
     }
@@ -171,6 +206,10 @@ main {
         h2 {
             text-align: center;
             margin-bottom: 1em;
+
+            @include mQ($tablet) {
+                text-align: left;
+            }
         }
 
         h3 {
@@ -197,6 +236,25 @@ main {
             color : $dark_Purple;
             font-size: $link_fontSize;
         }
+        
+
+        .heroImage {
+            width : 300px;
+            @include mQ($tablet) {
+                margin-top: 5em;
+                width : 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @include mQ($tablet) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap : 1em;
+        }
     }
 
     .testimony {
@@ -213,6 +271,10 @@ main {
             align-items: center;
             justify-content: center;
             text-align: center;
+
+            @include mQ($tablet) {
+                width : 200px;
+            }
         }
 
         .image {
@@ -227,6 +289,7 @@ main {
             margin-top: .3em;
         }
     }
+
     .testProcess {
         padding : $padding;
         background-color: $secondBcgColor;
@@ -246,6 +309,12 @@ main {
             margin-bottom: .5em;
         }
         
+        .heroImage {
+            height : auto;
+            width : 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .petugas {

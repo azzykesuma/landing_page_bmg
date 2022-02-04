@@ -71,6 +71,25 @@ p {
   font-family: "Barlow", sans-serif;
 }
 
+.heroImage {
+  max-width: 80vw;
+  height: 50vh;
+}
+.heroImage img {
+  height: auto;
+  width: 300px;
+}
+@media screen and (min-width: 768px) {
+  .heroImage img {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heroImage {
+    width: 50%;
+  }
+}
+
 .CTA_TEST {
   margin-block: 1em;
   background-color: #E8AA14;
@@ -325,6 +344,48 @@ header .hamburger .three {
   position: relative;
   top: -10px;
 }
+@media screen and (min-width: 768px) {
+  header .hamburger {
+    display: none;
+  }
+}
+header .tabletNav {
+  display: none;
+}
+header .tabletNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+}
+header .tabletNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3em;
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding-right: 5px;
+  height: 2em;
+  cursor: pointer;
+}
+header .tabletNav a {
+  color: #fff;
+}
+header .tabletNav ion-icon {
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  header .tabletNav {
+    display: block;
+  }
+}
 header .logo {
   background-color: #fff;
   height: 3rem;
@@ -461,13 +522,17 @@ main .hero p {
   font-size: 14px;
   margin-top: 0.8em;
 }
-main .hero .heroImage {
-  width: 80vw;
-  height: 50vh;
-}
-main .hero .heroImage img {
-  height: auto;
-  width: 100%;
+@media screen and (min-width: 768px) {
+  main .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 1em;
+  }
+  main .hero .heroContainer {
+    text-align: left;
+  }
 }
 main .kenapaVct {
   background-color: #84CEEB;
@@ -486,6 +551,11 @@ main .kenapaVct {
 main .kenapaVct h2 {
   text-align: center;
   margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  main .kenapaVct h2 {
+    text-align: left;
+  }
 }
 main .kenapaVct h3 {
   color: #0E103D;
@@ -509,6 +579,30 @@ main .kenapaVct a {
   color: #0E103D;
   font-size: 12px;
 }
+main .kenapaVct .heroImage {
+  width: 300px;
+}
+@media screen and (min-width: 768px) {
+  main .kenapaVct .heroImage {
+    margin-top: 5em;
+    width: 100%;
+  }
+}
+main .kenapaVct .heroImage img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  main .kenapaVct {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1em;
+  }
+}
 main .testimony {
   padding: 1em;
   background-color: #5680E9;
@@ -531,6 +625,11 @@ main .testimony .testimonyList {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  main .testimony .testimonyList {
+    width: 200px;
+  }
 }
 main .testimony .image {
   width: 5.5em;
@@ -559,6 +658,16 @@ main .testProcess li {
   -ms-grid-columns: 50px 1fr;
   grid-template-columns: 50px 1fr;
   margin-bottom: 0.5em;
+}
+main .testProcess .heroImage {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main .petugas {
   padding: 1em;

@@ -23,6 +23,16 @@
             <div></div>
             <div></div>
         </div>
+        <!-- tablet mode -->
+        <div class="tabletNav">
+            <ul>
+                <li><a href="#">Halaman Utama</a></li>
+                <li>Tentang BMG <span><ion-icon name="chevron-down-outline"></ion-icon></span></li>
+                <li>Layanan Test<span><ion-icon name="chevron-down-outline"></ion-icon></span></span></li>
+                <li>Pusat Informasi <span><ion-icon name="chevron-down-outline"></ion-icon></span></li>
+                <li><a href="./pages/donasi/donasi.html">Donasi</a></li>
+            </ul>
+        </div>
         <div class="logo"></div>
     </header>
     <div class="navBar">
@@ -64,8 +74,8 @@
                     Petugas kami akan menghubungi anda, dan membantu <br /> 
                     proses test di layanan kesehatan terdekat
                 </p>
+                <button class="CTA_TEST">Saya mau VCT!</button>
             </div>
-            <button class="CTA_TEST">Saya mau VCT!</button>
             <div class="heroImage">
                 <img src="./asset/hero_Image.jpg" alt="">
             </div>
@@ -131,47 +141,49 @@
             </form>
         </div>
         <section class="kenapaVct">
-            <h2>Kenapa harus VCT</h2>
-            <ul>
-                <li>
-                    <ion-icon name="search-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>Deteksi dini</h3>
-                        <p>
-                            melakukan test secara berkala sangatlah penting untuk mendeteksi dini virus HIV. 
-                            semakin cepat virus HIV ditemukan dan diobati dengan ARV, 
-                            maka semakin kecil kemungkinan munculnya infeksi oportunistik.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <ion-icon name="shield-checkmark-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>Aman dan nyaman</h3>
-                        <p>
-                            semua dokter yang berada di layanan kesehatan sudah terlatih dengan baik, 
-                            dan hampir semua puskesmas juga sudah memiliki layanan VCT. 
-                            selain itu, data anda akan aman karena dilindungi oleh undang-undang dan asas kerahasiaan.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <ion-icon name="people-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>Dibantu petugas lapangan kami</h3>
-                        <p>
-                            Jika anda belum pernah melakukan VCT di layanan kesehatan dan bingung terkait prosesnya, 
-                            maka anda bisa menghubungi salah satu petugas kami. 
-                            Petugas kami siap membimbing anda untuk melakukan VCT di layanan yang anda inginkan.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <div class="btnWrapper">
-                <button class="CTA_TEST">Saya mau VCT!</button>
-                <a href="#">Pelajari informasi tentang HIV</a>
+            <div class="PartSection">
+                <h2>Kenapa harus VCT</h2>
+                <ul>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>Deteksi dini</h3>
+                            <p>
+                                melakukan test secara berkala sangatlah penting untuk mendeteksi dini virus HIV. 
+                                semakin cepat virus HIV ditemukan dan diobati dengan ARV, 
+                                maka semakin kecil kemungkinan munculnya infeksi oportunistik.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>Aman dan nyaman</h3>
+                            <p>
+                                semua dokter yang berada di layanan kesehatan sudah terlatih dengan baik, 
+                                dan hampir semua puskesmas juga sudah memiliki layanan VCT. 
+                                selain itu, data anda akan aman karena dilindungi oleh undang-undang dan asas kerahasiaan.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon name="people-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>Dibantu petugas lapangan kami</h3>
+                            <p>
+                                Jika anda belum pernah melakukan VCT di layanan kesehatan dan bingung terkait prosesnya, 
+                                maka anda bisa menghubungi salah satu petugas kami. 
+                                Petugas kami siap membimbing anda untuk melakukan VCT di layanan yang anda inginkan.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btnWrapper">
+                    <button class="CTA_TEST">Saya mau VCT!</button>
+                    <a href="#">Pelajari informasi tentang HIV</a>
+                </div>
             </div>
-            <div class="heroImg"></div>
+            <div class="heroImage"><img src="./asset/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg" alt=""></div>
         </section>
         <section class="testimony">
             <h2>Apa kata mereka</h2>
@@ -225,55 +237,59 @@
             </div>       
         </section>
         <section class="testProcess">
-            <h2>Siap test? Yu ketahui prosesnya</h2>
-            <ul>
-                <li>
-                    <ion-icon name="document-text-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>Isi form <span>disini</span></h3>
-                        <p>klik <span>disini</span> untuk mengetahui siapa petugas lapangan terdekat.</p>
-                    </div>
-                </li>
-                <li>
-                    <ion-icon name="time-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>Atur jadwal test dengan petugas lapangan</h3>
-                        <p>petugas lapangan kami akan memberikan informasi mengenai jadwal buka layanan VCT di layanan kesehatan yang anda inginkan.</p>
-                    </div>
-                </li>
-                <li>
-                    <ion-icon name="car-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>Menuju layanan kesehatan</h3>
-                        <p>jangan lupa membawa KTP saat pergi ke layanan kesehatan. </p>
-                    </div>
-                </li>
-                <li>
-                    <ion-icon name="water-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>proses pengambilan darah</h3>
-                        <p>
-                            sesampainya di puskesmas, anda akan diarahkan ke lab untuk pengambilan darah.
-                            setelah itu anda akan diminta untuk menunggu hasil selama maksimal 30 menit. 
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <ion-icon name="happy-outline"></ion-icon>
-                    <div class="listInformation">
-                        <h3>Proses Konseling</h3>
-                        <p>
-                            Setelah hasil siap, maka anda akan diarahkan ke ruangan konseling. 
-                            disini dokter akan membuka hasil test anda, dan memberikan penilaian terhadap resiko HIV anda. 
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <div class="btnWrapper">
-                <button class="CTA_TEST">Saya mau VCT!</button>
-                <a href="#">Layanan apa saja yang bisa saya akses di puskesmas?</a>
+            <div class="PartSection">
+                <h2>Siap test? Yu ketahui prosesnya</h2>
+                <ul>
+                    <li>
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>Isi form <span>disini</span></h3>
+                            <p>klik <span>disini</span> untuk mengetahui siapa petugas lapangan terdekat.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon name="time-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>Atur jadwal test dengan petugas lapangan</h3>
+                            <p>petugas lapangan kami akan memberikan informasi mengenai jadwal buka layanan VCT di layanan kesehatan yang anda inginkan.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon name="car-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>Menuju layanan kesehatan</h3>
+                            <p>jangan lupa membawa KTP saat pergi ke layanan kesehatan. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon name="water-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>proses pengambilan darah</h3>
+                            <p>
+                                sesampainya di puskesmas, anda akan diarahkan ke lab untuk pengambilan darah.
+                                setelah itu anda akan diminta untuk menunggu hasil selama maksimal 30 menit. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <div class="listInformation">
+                            <h3>Proses Konseling</h3>
+                            <p>
+                                Setelah hasil siap, maka anda akan diarahkan ke ruangan konseling. 
+                                disini dokter akan membuka hasil test anda, dan memberikan penilaian terhadap resiko HIV anda. 
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btnWrapper">
+                    <button class="CTA_TEST">Saya mau VCT!</button>
+                    <a href="#">Layanan apa saja yang bisa saya akses di puskesmas?</a>
+                </div>
             </div>
-            <div class="heroImg"></div>
+            <div class="heroImage">
+                <img src="./asset/undraw_In_progress_re_m1l6.png" alt="">
+            </div>
         </section>
         <section class="petugas">
             <div class="splide">
@@ -453,11 +469,11 @@
             </div>
             <div class="hiddenList" id="about-bmg-footer">
                 <ul>
-                    <li><a href="#">Visi Misi</a></li>
-                    <li><a href="#">Pendiri Yayasan</a></li>
-                    <li><a href="#">Pengalaman Pengelolaan Program</a></li>
-                    <li><a href="#">Struktur Organisasi</a></li>
-                    <li><a href="#">Penghargaan dan Legalitas</a></li>
+                    <li><a href="./pages/about/about.html#visiMisi">Visi Misi</a></li>
+                    <li><a href="./pages/about/about.html#founder">Pendiri Yayasan</a></li>
+                    <li><a href="./pages/about/about.html#workExperience">Pengalaman Pengelolaan Program</a></li>
+                    <li><a href="./pages/about/about.html#struktur">Struktur Organisasi</a></li>
+                    <li><a href="./pages/about/about.html#award">Penghargaan dan Legalitas</a></li>
                 </ul>
             </div>
         </div>
@@ -468,9 +484,9 @@
             </div>
             <div class="hiddenList" id="community-support-footer">
                 <ul>
-                    <li><a href="#">Tes VCT</a></li>
-                    <li><a href="#">Tes IMS</a></li>
-                    <li><a href="#">Tes TB</a></li>
+                    <li><a href="./pages/layananTest/test.html">Tes VCT</a></li>
+                    <li><a href="./pages/layananTest/test.html">Tes IMS</a></li>
+                    <li><a href="./pages/layananTest/test.html">Tes TB</a></li>
                 </ul>
             </div>
         </div>
@@ -496,7 +512,7 @@
             for ( var i = 0; i < elms.length; i++ ) {
                 var splide = new Splide(elms[i], {
                     type: 'loop',
-                    perPage: 1,
+                    perPage: 3,
                     rewind : true,
                 }).mount();       
             }

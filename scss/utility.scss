@@ -1,4 +1,24 @@
 @import './variable';
+@import './mixin';
+
+.heroImage {
+    max-width : 80vw;
+    height: 50vh;
+
+    img {
+        height: auto;
+        width: 300px;
+
+        @include mQ($tablet) {
+            width : 350px;
+        }
+    }
+
+    @include mQ($tablet) {
+        width : 50%;
+    }
+}
+
 
 .CTA_TEST {
     margin-block: 1em;
