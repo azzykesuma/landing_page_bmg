@@ -374,9 +374,11 @@ header .tabletNav li {
   padding-right: 5px;
   height: 2em;
   cursor: pointer;
+  font-family: "Barlow", sans-serif;
 }
 header .tabletNav a {
   color: #fff;
+  font-family: "Barlow", sans-serif;
 }
 header .tabletNav ion-icon {
   margin-top: 5px;
@@ -642,6 +644,13 @@ main .testimony .work {
   margin-top: 0.3em;
 }
 main .testProcess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 1em;
   background-color: #84CEEB;
 }
@@ -669,6 +678,24 @@ main .testProcess .heroImage {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  main .testProcess .heroImage {
+    margin-top: 5em;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .testProcess {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1em;
+  }
+}
 main .petugas {
   padding: 1em;
   background-color: #5680E9;
@@ -695,6 +722,12 @@ main .petugas .image {
   border-radius: 50%;
   background-color: #fff;
 }
+@media screen and (min-width: 768px) {
+  main .petugas .image {
+    width: 7em;
+    height: 7em;
+  }
+}
 main .petugas .name {
   margin-block: 0.3em;
 }
@@ -712,9 +745,19 @@ main .donation p {
 }
 main .donation .imageAct {
   margin-block: 1.5em;
-  width: 100%;
+  width: 14em;
   height: 10em;
   background-color: #5680E9;
+}
+@media screen and (min-width: 768px) {
+  main .donation .btnWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 footer {
@@ -740,6 +783,16 @@ footer .footerNav {
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
 }
+@media screen and (min-width: 768px) {
+  footer .footerNav {
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footerNav ion-icon {
+    display: none;
+  }
+}
 footer .hiddenList {
   height: 0;
   opacity: 0;
@@ -754,6 +807,36 @@ footer .hiddenList li, footer .hiddenList a {
 }
 footer .hiddenList li {
   margin-bottom: 0.5em;
+}
+@media screen and (min-width: 768px) {
+  footer .hiddenList {
+    display: none;
+  }
+}
+footer .tableList {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .tableList li {
+  margin-bottom: 1em;
+}
+footer .tableList a {
+  color: #F4FDAF;
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+}
+@media screen and (min-width: 768px) {
+  footer .tableList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 footer #about-bmg-footer.active {
   height: 120px;
@@ -787,4 +870,17 @@ footer #contactUs ion-icon {
 }
 footer .hiddenList.open {
   display: block;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }

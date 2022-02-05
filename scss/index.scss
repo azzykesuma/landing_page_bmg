@@ -59,10 +59,12 @@ header {
             padding-right: 5px;
             height : 2em;
             cursor: pointer;
+            font-family: $body_font;
         }
 
         a {
             color : $white;
+            font-family: $body_font;
         }
 
         ion-icon {
@@ -291,6 +293,8 @@ main {
     }
 
     .testProcess {
+        display: flex;
+        flex-direction: column;
         padding : $padding;
         background-color: $secondBcgColor;
         
@@ -314,6 +318,17 @@ main {
             width : 100%;
             display: flex;
             justify-content: center;
+
+            @include mQ($tablet) {
+                margin-top: 5em;
+                width : 100%;
+            }
+        }
+
+        @include mQ($tablet) {
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            gap : 1em;
         }
     }
 
@@ -335,6 +350,11 @@ main {
             height : 5.5em;
             border-radius: 50%;
             background-color: $white;
+
+            @include mQ($tablet) {
+                width : 7em;
+                height : 7em;
+            }
         }
 
         .name {
@@ -358,9 +378,15 @@ main {
 
         .imageAct {
             margin-block : 1.5em;
-            width : 100%;
+            width : 14em;
             height : 10em;
             background-color: $firstBcgColor;
+        }
+        .btnWrapper {
+            @include mQ($tablet) {
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 }
@@ -382,6 +408,17 @@ footer {
         border-bottom: 1px solid $white;
         margin-bottom: .5em;
         padding-bottom: .5em;
+
+        @include mQ($tablet) {
+            border : none;
+        }
+
+        ion-icon {
+
+            @include mQ($tablet) {
+                display: none;
+            }
+        }
     }
 
     .hiddenList {
@@ -399,6 +436,29 @@ footer {
             margin-bottom: .5em;
         }
 
+        @include mQ($tablet) {
+            display: none;
+        }
+    }
+
+    .tableList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            margin-bottom: 1em;
+        }
+
+        a {
+            color : #F4FDAF;
+            font-family: $body_font;
+            font-size: 1em;
+        }
+
+        @include mQ($tablet) {
+            display: flex;
+        }
     }
 
     #about-bmg-footer.active {
@@ -431,5 +491,11 @@ footer {
     }
     .hiddenList.open {
         display: block;
+    }
+
+    @include mQ($tablet) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
     }
 }
