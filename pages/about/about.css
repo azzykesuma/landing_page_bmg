@@ -226,6 +226,101 @@ h2 {
   width: 7em;
 }
 
+#nav__about--tablet,
+#nav__Test--tablet,
+#nav__Information--tablet {
+  position: absolute;
+  top: 4em;
+  left: 8.3em;
+}
+#nav__about--tablet li,
+#nav__Test--tablet li,
+#nav__Information--tablet li {
+  margin-bottom: 0.5em;
+}
+#nav__about--tablet a,
+#nav__Test--tablet a,
+#nav__Information--tablet a {
+  font-family: "Barlow", sans-serif;
+}
+
+#nav__about--tablet {
+  background-color: #fff;
+  width: 7em;
+  padding: 0;
+  height: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#nav__about--tablet li {
+  -webkit-transform: translateX(-1000em);
+          transform: translateX(-1000em);
+  opacity: 0;
+}
+
+#nav__about--tablet.active {
+  height: auto;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#nav__about--tablet.active li {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  opacity: 1;
+}
+
+#nav__Test--tablet {
+  left: 16em;
+  background-color: #fff;
+  width: 7em;
+  padding: 0;
+  height: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#nav__Test--tablet li {
+  -webkit-transform: translateX(-1000em);
+          transform: translateX(-1000em);
+  opacity: 0;
+}
+
+#nav__Test--tablet.active {
+  height: auto;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#nav__Test--tablet.active li {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  opacity: 1;
+}
+
+#nav__Information--tablet {
+  left: 24em;
+  background-color: #fff;
+  padding: 0;
+  height: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#nav__Information--tablet li {
+  -webkit-transform: translateX(-1000em);
+          transform: translateX(-1000em);
+  opacity: 0;
+}
+
+#nav__Information--tablet.active {
+  height: auto;
+  padding: 1em;
+}
+#nav__Information--tablet.active li {
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  opacity: 1;
+}
+
 h1 {
   font-size: 2em;
 }
