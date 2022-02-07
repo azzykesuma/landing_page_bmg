@@ -2,6 +2,10 @@
 @import '../../scss/root';
 @import '../../scss/variable';
 
+a {
+    color : $dark_Purple;
+}
+
 .formTest {
     padding : $padding;
     background-color: $firstBcgColor;
@@ -22,6 +26,20 @@
         width : 100%;
     }
 
+    .topForm,
+    .midForm,
+    .bottomForm {
+        display: flex;
+        flex-direction: column;
+
+        @include mQ($tablet) {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap : 1em;
+        }
+    }
+
     .formItem {
         display: flex;
         flex-direction: column;
@@ -34,11 +52,15 @@
         }
 
         input {
-         
             padding: .5em;
             border: none;
             border-bottom: 1px solid $white;
             font-size: .8em;
+            background-color: transparent;
+        }
+
+        select {
+            width : 50%;
         }
         
         .radioItem {

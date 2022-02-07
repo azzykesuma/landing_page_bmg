@@ -71,6 +71,32 @@ p {
   font-family: "Barlow", sans-serif;
 }
 
+.innerList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .innerList {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.rightPart {
+  width: 100%;
+}
+
+.leftPart {
+  width: 100%;
+}
+
 .hiv {
   padding: 1em;
   background-color: #5680E9;

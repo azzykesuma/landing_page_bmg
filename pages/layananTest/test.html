@@ -21,8 +21,37 @@
             <div></div>
             <div></div>
         </div>
+        <div class="tabletNav">
+            <ul>
+                <li><a href="#">Halaman Utama</a></li>
+                <li id="navAbout--tablet">Tentang BMG <span><ion-icon name="chevron-down-outline"></ion-icon></span></li>
+                <li id="navTest--tablet">Layanan Test<span><ion-icon name="chevron-down-outline"></ion-icon></span></span></li>
+                <li id="navInfo--tablet">Pusat Informasi <span><ion-icon name="chevron-down-outline"></ion-icon></span></li>
+                <li><a href="../donasi/donasi.html">Donasi</a></li>
+            </ul>
+        </div>
         <div class="logo"></div>
     </header>
+    <div class="tablet--navBar">
+        <ul id="nav__about--tablet">
+            <li><a href="../about/about.html#visiMisi">Visi Misi</a></li>
+            <li><a href="../about/about.html#founder">Pendiri Yayasan</a></li>
+            <li><a href="../about/about.html#workExperience">Pengalaman Pengelolaan Program</a></li>
+            <li><a href="../about/about.html#struktur">Struktur Organisasi</a></li>
+            <li><a href="../about/about.html#award">Penghargaan dan Legalitas</a></li>
+        </ul>
+        <ul id="nav__Test--tablet">
+            <li><a href="#">Test VCT</a></li>
+            <li><a href="#">Test IMS</a></li>
+            <li><a href="#">Test TB</a></li>
+        </ul>
+        <ul id="nav__Information--tablet">
+            <li><a href="..informasi/informasi.html#hiv">Human Immunodeficiency Virus (HIV)</a></li>
+            <li><a href="../informasi/informasi.html#ims">Infeksi Menular Seksual (IMS)</a></li>
+            <li><a href="../informasi/informasi.html#tb">Tuberkulosis (TB)</a></li>
+            <li><a href="../informasi/informasi.html#hepatitis">Hepatitis</a></li>
+        </ul>
+    </div>
     <div class="navBar">
         <div class="close"><ion-icon name="close-outline"></ion-icon></div>
         <ul id="mainNav">
@@ -59,51 +88,68 @@
             <h1>Siap Test? Kami Siap Bantu</h1>
             <h2>Isi form, dan siap test dimana Saja, Kapan Saja</h2>
             <form action="">
-                <div class="formItem">
-                    <label for="client_name">Inisial Nama</label>
-                    <input type="text"
-                    placeholder="Masukan 4 karakter awal nama anda, cont : AHMA" 
-                    />
-                </div>
-                <div class="formItem">
-                    <label for="client_number">Nomor HP</label>
-                    <input type="number"
-                    placeholder="harap masukan nomor HP yang bisa dihubungi" 
-                    />
-                </div>
-                <div class="formItem">
-                    <label for="area">Kabupaten :</label>
-                    <select name="area" id="area">
-                        <option value="KotaTangerang">Kota Tangerang</option>
-                        <option value="KabTangerang">Kab Tangerang</option>
-                        <option value="KabSerang">Kab Serang</option>
-                        <option value="KotaSerang">Kota Serang</option>
-                        <option value="KotaCilegon">Kota Cilegon</option>
-                    </select>
-                </div>
-                <div class="formItem">
-                    <p>apakah anda sudah tes dalam 6 bulan terakhir ? <span><ion-icon name="help-circle-outline"></ion-icon></span></p>
-                    <div class="radioItem">
-                        <div>
-                            <input type="radio" id="ya" name="eligibleTest" value="yes">
-                            <label for="ya">Ya</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="tidak" name="eligibleTest" value="no">
-                            <label for="tidak">Tidak</label>
-                        </div>
+                <div class="topForm">
+                    <div class="formItem">
+                        <label for="client_name">Inisial Nama</label>
+                        <input type="text"
+                        placeholder="Masukan 4 karakter awal nama anda, cont : AHMA" 
+                        />
+                    </div>
+                    <div class="formItem">
+                        <label for="client_number">Nomor HP</label>
+                        <input type="number"
+                        placeholder="harap masukan nomor HP yang bisa dihubungi" 
+                        />
                     </div>
                 </div>
-                <div class="formItem">
-                    <p>apakah anda memiliki KTP ? <span><ion-icon name="help-circle-outline"></ion-icon></span></p>
-                    <div class="radioItem">
-                        <div>
-                            <input type="radio" id="punya" name="KtpOwnership" value="punya">
-                            <label for="punya">ya,punya</label>
+                <div class="midForm">
+                    <div class="formItem">
+                        <label for="area">Kabupaten :</label>
+                        <select name="area" id="area">
+                            <option value="KotaTangerang">Kota Tangerang</option>
+                            <option value="KabTangerang">Kab Tangerang</option>
+                            <option value="KabSerang">Kab Serang</option>
+                            <option value="KotaSerang">Kota Serang</option>
+                            <option value="KotaCilegon">Kota Cilegon</option>
+                        </select>
+                    </div>
+                    <div class="formItem">
+                        <label for="puskesmas">Puskesmas :</label>
+                        <select name="puskesmas" id="puskesmas">
+                            <option value="pusCikupa">Puskesmas Cikupa</option>
+                            <option value="pusCikupa">Puskesmas Cikupa</option>
+                            <option value="pusCikupa">Puskesmas Cikupa</option>
+                            <option value="pusCikupa">Puskesmas Cikupa</option>
+                            <option value="pusCikupa">Puskesmas Cikupa</option>
+                            <option value="pusCikupa">Puskesmas Cikupa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bottomForm">
+                    <div class="formItem">
+                        <p>apakah anda sudah tes dalam 6 bulan terakhir ? <span><ion-icon name="help-circle-outline"></ion-icon></span></p>
+                        <div class="radioItem">
+                            <div>
+                                <input type="radio" id="ya" name="eligibleTest" value="yes">
+                                <label for="ya">Ya</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="tidak" name="eligibleTest" value="no">
+                                <label for="tidak">Tidak</label>
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" id="tidakPunya" name="KtpOwnership" value="tidak punya">
-                            <label for="tidakPunya">Tidak Punya</label>
+                    </div>
+                    <div class="formItem">
+                        <p>apakah anda memiliki KTP ? <span><ion-icon name="help-circle-outline"></ion-icon></span></p>
+                        <div class="radioItem">
+                            <div>
+                                <input type="radio" id="punya" name="KtpOwnership" value="punya">
+                                <label for="punya">ya,punya</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="tidakPunya" name="KtpOwnership" value="tidak punya">
+                                <label for="tidakPunya">Tidak Punya</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,6 +212,15 @@
                     <li><a href="../about/about.html#award">Penghargaan dan Legalitas</a></li>
                 </ul>
             </div>
+            <div class="tableList">
+                <ul>
+                    <li><a href="./pages/about/about.html#visiMisi">Visi Misi</a></li>
+                    <li><a href="./pages/about/about.html#founder">Pendiri Yayasan</a></li>
+                    <li><a href="./pages/about/about.html#workExperience">Pengalaman Pengelolaan Program</a></li>
+                    <li><a href="./pages/about/about.html#struktur">Struktur Organisasi</a></li>
+                    <li><a href="./pages/about/about.html#award">Penghargaan dan Legalitas</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footerList">
             <div class="footerNav">
@@ -179,6 +234,13 @@
                     <li><a href="../layananTest/test.html">Tes TB</a></li>
                 </ul>
             </div>
+            <div class="tableList">
+                <ul>
+                    <li><a href="./pages/layananTest/test.html">Tes VCT</a></li>
+                    <li><a href="./pages/layananTest/test.html">Tes IMS</a></li>
+                    <li><a href="./pages/layananTest/test.html">Tes TB</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footerList">
             <div class="footerNav">
@@ -187,6 +249,14 @@
             </div>
             <div class="hiddenList" id="contact-us-footer">
                 <ul id='contactUs'>
+                    <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div class="tableList">
+                <ul>
                     <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
                     <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
                     <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
