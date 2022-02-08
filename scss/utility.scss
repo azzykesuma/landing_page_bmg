@@ -12,10 +12,20 @@
         @include mQ($tablet) {
             width : 350px;
         }
+        
+        @include mQ($desktop) {
+            width : 100%;
+            height : 400px;
+        }
     }
 
     @include mQ($tablet) {
         width : 50%;
+    }
+
+    @include mQ($desktop) {
+        width : 60%;
+        height : 400px;
     }
 }
 
@@ -128,12 +138,12 @@ h2 {
 #nav__about,
 #nav__Test,
 #nav__Information {
+    display : none;
     position: absolute;
     width: 250px;
     height: 100%;
-    top : 0;
-    transform: translateX(-50em);
     transition: all 0.5s ease-in-out;
+    top : 0;
     background-color: #D0D6B5;
     padding-top : 3em;
 }
@@ -194,6 +204,10 @@ h2 {
         background-color: red;
         height : 7em;
         width : 7em;
+    }
+
+    @include mQ($tablet) {
+        width : 30%;
     }
 }
 

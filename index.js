@@ -49,24 +49,20 @@ const infoBarTablet = document.getElementById('nav__Information--tablet');
 const testBarTablet = document.getElementById('nav__Test--tablet');
 const aboutBarTablet = document.getElementById('nav__about--tablet');
 
-navTablet.addEventListener('mouseover', (e) => {
+navTablet.addEventListener('click', (e) => {
     const target = e.target; 
     if(target.id === 'navAbout--tablet') {
-        aboutBarTablet.classList.add('active');
+        aboutBarTablet.classList.toggle('active');
         testBarTablet.classList.remove('active');
         infoBarTablet.classList.remove('active');
     } else if (target.id === 'navTest--tablet') {
-        testBarTablet.classList.add('active');
+        testBarTablet.classList.toggle('active');
         aboutBarTablet.classList.remove('active');
         infoBarTablet.classList.remove('active');
     } else if (target.id === 'navInfo--tablet') {
-        infoBarTablet.classList.add('active');
+        infoBarTablet.classList.toggle('active');
         aboutBarTablet.classList.remove('active');
         testBarTablet.classList.remove('active');
-    } else if (target.id !== 'navAbout--tablet' && target.id !== 'navTest--tablet' && target.id !== 'navInfo--tablet') {
-        aboutBarTablet.classList.remove('active');
-        testBarTablet.classList.remove('active');
-        infoBarTablet.classList.remove('active');
     }
 })
 

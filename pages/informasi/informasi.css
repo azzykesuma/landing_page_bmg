@@ -82,19 +82,22 @@ p {
 }
 @media screen and (min-width: 768px) {
   .innerList {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-    grid-template-columns: 50% 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
-.rightPart {
-  width: 100%;
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-.leftPart {
-  width: 100%;
+.rightPart {
+  width: 70%;
 }
 
 .hiv {

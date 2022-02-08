@@ -179,6 +179,10 @@ main {
             font-size: $header_fontSize;
             font-family: $header_font;
             color: $white;
+
+            @include mQ($desktop) {
+                font-size: 3em;
+            }
         }
 
         p {
@@ -186,6 +190,10 @@ main {
             font-family: $body_font;
             font-size: $body_fontSize;
             margin-top: .8em;
+
+            @include mQ($desktop) {
+                font-size: 1.3em;
+            }
         }
 
         @include mQ($tablet) {
@@ -196,6 +204,16 @@ main {
                 text-align: left;
             }
         }
+
+        @include mQ($desktop) {
+            height : 30em;
+            align-items: flex-start;
+
+            .heroContainer {
+                transform: translateY(3em);
+            }
+        }
+
     }
 
     .kenapaVct {
@@ -267,6 +285,12 @@ main {
             margin-bottom: .5em;
         }
 
+        .innerTest {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .testimonyList {
             display: flex;
             flex-direction: column;
@@ -274,8 +298,8 @@ main {
             justify-content: center;
             text-align: center;
 
-            @include mQ($tablet) {
-                width : 200px;
+            .statement {
+                max-width: 30ch;
             }
         }
 
@@ -335,6 +359,10 @@ main {
     .petugas {
         padding : $padding;
         background-color: $firstBcgColor;
+
+        h2 {
+            margin-bottom: 1em;
+        }
 
         .listPetugas {
             display : flex;

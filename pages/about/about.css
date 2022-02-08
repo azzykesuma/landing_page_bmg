@@ -11,9 +11,21 @@
     width: 350px;
   }
 }
+@media screen and (min-width: 1020px) {
+  .heroImage img {
+    width: 100%;
+    height: 400px;
+  }
+}
 @media screen and (min-width: 768px) {
   .heroImage {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .heroImage {
+    width: 60%;
+    height: 400px;
   }
 }
 
@@ -140,14 +152,13 @@ h2 {
 #nav__about,
 #nav__Test,
 #nav__Information {
+  display: none;
   position: absolute;
   width: 250px;
   height: 100%;
-  top: 0;
-  -webkit-transform: translateX(-50em);
-          transform: translateX(-50em);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  top: 0;
   background-color: #D0D6B5;
   padding-top: 3em;
 }
@@ -224,6 +235,11 @@ h2 {
   background-color: red;
   height: 7em;
   width: 7em;
+}
+@media screen and (min-width: 768px) {
+  .imageCarousel {
+    width: 30%;
+  }
 }
 
 #nav__about--tablet,

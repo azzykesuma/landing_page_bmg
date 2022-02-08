@@ -84,9 +84,21 @@ p {
     width: 350px;
   }
 }
+@media screen and (min-width: 1020px) {
+  .heroImage img {
+    width: 100%;
+    height: 400px;
+  }
+}
 @media screen and (min-width: 768px) {
   .heroImage {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .heroImage {
+    width: 60%;
+    height: 400px;
   }
 }
 
@@ -213,14 +225,13 @@ h2 {
 #nav__about,
 #nav__Test,
 #nav__Information {
+  display: none;
   position: absolute;
   width: 250px;
   height: 100%;
-  top: 0;
-  -webkit-transform: translateX(-50em);
-          transform: translateX(-50em);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  top: 0;
   background-color: #D0D6B5;
   padding-top: 3em;
 }
@@ -297,6 +308,11 @@ h2 {
   background-color: red;
   height: 7em;
   width: 7em;
+}
+@media screen and (min-width: 768px) {
+  .imageCarousel {
+    width: 30%;
+  }
 }
 
 #nav__about--tablet,
@@ -613,11 +629,21 @@ main .hero h1 {
   font-family: "Arvo", serif;
   color: #fff;
 }
+@media screen and (min-width: 1020px) {
+  main .hero h1 {
+    font-size: 3em;
+  }
+}
 main .hero p {
   color: #fff;
   font-family: "Barlow", sans-serif;
   font-size: 14px;
   margin-top: 0.8em;
+}
+@media screen and (min-width: 1020px) {
+  main .hero p {
+    font-size: 1.3em;
+  }
 }
 @media screen and (min-width: 768px) {
   main .hero {
@@ -629,6 +655,18 @@ main .hero p {
   }
   main .hero .heroContainer {
     text-align: left;
+  }
+}
+@media screen and (min-width: 1020px) {
+  main .hero {
+    height: 30em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .hero .heroContainer {
+    -webkit-transform: translateY(3em);
+            transform: translateY(3em);
   }
 }
 main .kenapaVct {
@@ -707,6 +745,18 @@ main .testimony {
 main .testimony h2 {
   margin-bottom: 0.5em;
 }
+main .testimony .innerTest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 main .testimony .testimonyList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,10 +773,8 @@ main .testimony .testimonyList {
           justify-content: center;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  main .testimony .testimonyList {
-    width: 200px;
-  }
+main .testimony .testimonyList .statement {
+  max-width: 30ch;
 }
 main .testimony .image {
   width: 5.5em;
@@ -794,6 +842,9 @@ main .testProcess .heroImage {
 main .petugas {
   padding: 1em;
   background-color: #5680E9;
+}
+main .petugas h2 {
+  margin-bottom: 1em;
 }
 main .petugas .listPetugas {
   display: -webkit-box;
