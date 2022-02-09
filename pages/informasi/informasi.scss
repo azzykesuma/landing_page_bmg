@@ -1,6 +1,8 @@
 @import '../../scss/mixin';
 @import '../../scss/root';
 @import '../../scss/variable';
+@import '../../scss/utility';
+
 
 .innerList {
     display: flex;
@@ -19,6 +21,10 @@
     width : 70%;
 }
 
+.leftPart {
+    padding : 1em;
+}
+
 .hiv {
     padding : $padding;
     background-color: $firstBcgColor;
@@ -31,13 +37,42 @@
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.6em;
         text-align: left;
+    }
+
+    h3 {
+        margin-top: .5em;
+        font-size: 1.4em;
+        color : $white;
     }
     
     p {
         color : $white;
         margin-bottom: 1em;
+
+        @include mQ($tablet) {
+            font-size: 1.1em;
+        }
+    }
+
+    .source {
+        font-size: .9em;
+        color : #030301;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 2em;
+        margin-bottom: .5em;
+
+        li {
+            color : $white;
+            margin-bottom: .5em;
+            @include mQ($tablet) {
+                font-size: 1.1em;
+            }
+        }
     }
 
 }
