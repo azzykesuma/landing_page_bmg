@@ -471,10 +471,6 @@ h2 {
     font-size: 1.1em;
   }
 }
-.hiv .source {
-  font-size: 0.9em;
-  color: #030301;
-}
 .hiv ul {
   list-style-type: disc;
   margin-left: 2em;
@@ -483,11 +479,16 @@ h2 {
 .hiv ul li {
   color: #fff;
   margin-bottom: 0.5em;
+  font-family: "Barlow", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .hiv ul li {
     font-size: 1.1em;
   }
+}
+.hiv .source {
+  font-size: 0.9em;
+  color: #030301;
 }
 
 .ims {
@@ -496,12 +497,46 @@ h2 {
 }
 .ims h2 {
   color: #0E103D;
-  font-size: 1.3em;
+  font-size: 1.6em;
   text-align: left;
+}
+.ims h3 {
+  margin-top: 0.5em;
+  font-size: 1.4em;
+  color: #0E103D;
+}
+.ims h4 {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  color: #0E103D;
 }
 .ims p {
   color: #0E103D;
   margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .ims p {
+    font-size: 1.1em;
+  }
+}
+.ims ul {
+  list-style-type: disc;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+.ims ul li {
+  color: #0E103D;
+  margin-bottom: 0.5em;
+  font-family: "Barlow", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .ims ul li {
+    font-size: 1.1em;
+  }
+}
+.ims .source {
+  font-size: 0.9em;
+  color: #030301;
 }
 
 .tb {
@@ -512,9 +547,23 @@ h2 {
   font-size: 1.3em;
   text-align: left;
 }
+.tb h3 {
+  margin-top: 0.5em;
+  font-size: 1.4em;
+  color: #fff;
+}
 .tb p {
   color: #fff;
   margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .tb p {
+    font-size: 1.1em;
+  }
+}
+.tb .source {
+  font-size: 0.9em;
+  color: #030301;
 }
 
 .hepatitis {
@@ -526,7 +575,36 @@ h2 {
   font-size: 1.3em;
   text-align: left;
 }
+.hepatitis h3 {
+  margin-top: 0.5em;
+  font-size: 1.4em;
+  color: #0E103D;
+}
 .hepatitis p {
   color: #0E103D;
   margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .hepatitis p {
+    font-size: 1.1em;
+  }
+}
+.hepatitis ul {
+  list-style-type: disc;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+.hepatitis ul li {
+  color: #0E103D;
+  margin-bottom: 0.5em;
+  font-family: "Barlow", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .hepatitis ul li {
+    font-size: 1.1em;
+  }
+}
+.hepatitis .source {
+  font-size: 0.9em;
+  color: #030301;
 }
