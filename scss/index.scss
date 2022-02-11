@@ -306,8 +306,12 @@ main {
         .image {
             width : 5.5em;
             height : 5.5em;
-            border-radius: 50%;
-            background-color: $white;
+            
+            img {
+                height : auto;
+                width: 100%;
+                border-radius: 50%;
+            }
         }
 
         .statement,
@@ -374,19 +378,35 @@ main {
         
 
         .image {
-            width : 5.5em;
-            height : 5.5em;
-            border-radius: 50%;
-            background-color: $white;
 
-            @include mQ($tablet) {
-                width : 7em;
-                height : 7em;
+            img {
+                width : 5.5em;
+                height : 5.5em;
+                border-radius: 50%;
+
+                @include mQ($tablet) {
+                    width : 7em;
+                    height : 7em;
+                }
+
+                @include mQ($desktop) {
+                    width : 10em;
+                    height : 10em;
+                }
             }
         }
 
         .name {
             margin-block: .3em;
+        }
+
+        .name,
+        .work {
+            font-size: .8em;
+
+            @include mQ($desktop) {
+                font-size: 1em;
+            }
         }
     }
 
@@ -404,11 +424,16 @@ main {
             margin-bottom: .5em;
         }
 
-        .imageAct {
+        img {
             margin-block : 1.5em;
             width : 14em;
             height : 10em;
             background-color: $firstBcgColor;
+
+            img {
+                width : 100%;
+                height : auto;
+            }
         }
         .btnWrapper {
             @include mQ($tablet) {

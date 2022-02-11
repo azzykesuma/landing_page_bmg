@@ -788,8 +788,11 @@ main .testimony .testimonyList .statement {
 main .testimony .image {
   width: 5.5em;
   height: 5.5em;
+}
+main .testimony .image img {
+  height: auto;
+  width: 100%;
   border-radius: 50%;
-  background-color: #fff;
 }
 main .testimony .statement,
 main .testimony .work {
@@ -871,20 +874,35 @@ main .petugas .listPetugas {
           justify-content: center;
   text-align: center;
 }
-main .petugas .image {
+main .petugas .image img {
   width: 5.5em;
   height: 5.5em;
   border-radius: 50%;
-  background-color: #fff;
 }
 @media screen and (min-width: 768px) {
-  main .petugas .image {
+  main .petugas .image img {
     width: 7em;
     height: 7em;
   }
 }
+@media screen and (min-width: 1020px) {
+  main .petugas .image img {
+    width: 10em;
+    height: 10em;
+  }
+}
 main .petugas .name {
   margin-block: 0.3em;
+}
+main .petugas .name,
+main .petugas .work {
+  font-size: 0.8em;
+}
+@media screen and (min-width: 1020px) {
+  main .petugas .name,
+main .petugas .work {
+    font-size: 1em;
+  }
 }
 main .donation {
   padding: 1em;
@@ -898,11 +916,15 @@ main .donation p {
   text-align: center;
   margin-bottom: 0.5em;
 }
-main .donation .imageAct {
+main .donation img {
   margin-block: 1.5em;
   width: 14em;
   height: 10em;
   background-color: #5680E9;
+}
+main .donation img img {
+  width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 768px) {
   main .donation .btnWrapper {

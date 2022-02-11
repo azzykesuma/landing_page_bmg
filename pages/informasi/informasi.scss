@@ -15,7 +15,12 @@
 
 
 .reverse {
-    flex-direction: row-reverse;
+    display: block;
+
+    @include mQ($tablet) {
+        display : flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .rightPart {
