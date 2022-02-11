@@ -193,17 +193,27 @@ h2 {
     margin-left: 2em;
 }
 
-.imageCarousel {
-        
+.imageCarousel {  
     .listContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .image {
-        background-color: red;
-        height : 7em;
-        width : 7em;
+        height : 15em;
+        width : 100%;
+        background-size: cover;
+
+        img {
+            width : 100%;
+            height : 100%;
+        }
+    }
+
+    .caption {
+        font-family: $body_font;
+        margin-top: .5em;
+        text-align: center;
     }
 
     @include mQ($tablet) {
