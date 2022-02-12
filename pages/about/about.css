@@ -441,6 +441,12 @@ h2 {
     height: 100px;
   }
 }
+@media screen and (min-width: 1020px) {
+  .founder .founderItem .image img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .founder .founderItem p {
   font-size: 0.9em;
   text-align: center;
@@ -450,6 +456,11 @@ h2 {
     font-size: 1em;
   }
 }
+@media screen and (min-width: 1020px) {
+  .founder .founderItem p {
+    font-size: 1.5em;
+  }
+}
 
 .workExperience {
   padding: 1em;
@@ -457,6 +468,16 @@ h2 {
 }
 .workExperience h2 {
   margin-bottom: 1em;
+}
+.workExperience ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+.workExperience ul li {
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 1em;
+  font-size: 1em;
 }
 .workExperience .expItem {
   display: -webkit-box;
@@ -472,15 +493,13 @@ h2 {
     display: none;
   }
 }
-.workExperience ul {
-  list-style-type: disc;
-  margin-left: 1em;
+.workExperience .mobileList {
+  display: block;
 }
-.workExperience ul li {
-  color: #fff;
-  font-family: "Barlow", sans-serif;
-  margin-bottom: 1em;
-  font-size: 1em;
+@media screen and (min-width: 768px) {
+  .workExperience .mobileList {
+    display: none;
+  }
 }
 .workExperience .tabletMode {
   display: none;
@@ -506,14 +525,18 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 3px 9px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 3px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .workExperience .card .gambar {
   width: 100%;
   height: 150px;
   border-radius: 5px 5px 0 0;
-  background-color: #8D4747;
+}
+.workExperience .card .gambar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .workExperience .card .tahun {
   background-color: #3C1616;
@@ -536,6 +559,17 @@ h2 {
 }
 .workExperience .card .bottomCard {
   padding: 1em;
+}
+.workExperience .card .bottomCard h3,
+.workExperience .card .bottomCard p {
+  text-align: center;
+  color: #261C15;
+}
+.workExperience .card .bottomCard h3 {
+  font-size: 1em;
+}
+.workExperience .card .bottomCard p {
+  font-size: 0.9em;
 }
 
 .struktur {
@@ -582,6 +616,16 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.8em;
+}
+.award ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+.award ul li {
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 1em;
+  font-size: 1em;
 }
 @media screen and (min-width: 768px) {
   .award p {
