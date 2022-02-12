@@ -253,16 +253,19 @@ h2 {
 }
 
 #nav__about.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
 
 #nav__Test.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
 
 #nav__Information.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }

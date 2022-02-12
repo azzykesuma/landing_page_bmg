@@ -180,16 +180,19 @@ h2 {
 }
 
 #nav__about.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
 
 #nav__Test.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
 
 #nav__Information.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
@@ -378,8 +381,13 @@ h2 {
   text-align: center;
   margin-bottom: 0.5em;
 }
+.visiMisi .visi {
+  margin-bottom: 1em;
+}
 .visiMisi p {
   text-align: center;
+  color: #fff;
+  line-height: 1.5em;
 }
 @media screen and (min-width: 768px) {
   .visiMisi p {
@@ -421,20 +429,21 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
-.founder .founderItem .image {
+.founder .founderItem .image img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background-color: red;
 }
 @media screen and (min-width: 768px) {
-  .founder .founderItem .image {
+  .founder .founderItem .image img {
     width: 100px;
     height: 100px;
   }
 }
 .founder .founderItem p {
   font-size: 0.9em;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .founder .founderItem p {
@@ -446,10 +455,8 @@ h2 {
   padding: 1em;
   background-color: #5680E9;
 }
-@media screen and (min-width: 768px) {
-  .workExperience h2 {
-    margin-bottom: 1em;
-  }
+.workExperience h2 {
+  margin-bottom: 1em;
 }
 .workExperience .expItem {
   display: -webkit-box;
@@ -464,6 +471,16 @@ h2 {
   .workExperience .expItem {
     display: none;
   }
+}
+.workExperience ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+.workExperience ul li {
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 1em;
+  font-size: 1em;
 }
 .workExperience .tabletMode {
   display: none;

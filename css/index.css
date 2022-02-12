@@ -253,16 +253,19 @@ h2 {
 }
 
 #nav__about.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
 
 #nav__Test.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
 
 #nav__Information.active {
+  display: block;
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
 }
@@ -508,8 +511,7 @@ header .tabletNav ion-icon {
     display: block;
   }
 }
-header .logo {
-  background-color: #fff;
+header .logo img {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
@@ -785,18 +787,29 @@ main .testimony .testimonyList {
 main .testimony .testimonyList .statement {
   max-width: 30ch;
 }
-main .testimony .image {
+main .testimony .image img {
   width: 5.5em;
   height: 5.5em;
-}
-main .testimony .image img {
-  height: auto;
-  width: 100%;
   border-radius: 50%;
 }
+main .testimony .nama,
 main .testimony .statement,
 main .testimony .work {
   margin-top: 0.3em;
+  font-size: 0.9em;
+}
+@media screen and (min-width: 768px) {
+  main .testimony .nama,
+main .testimony .statement,
+main .testimony .work {
+    font-size: 1em;
+  }
+}
+main .testimony .nama {
+  font-weight: bold;
+}
+main .testimony .work {
+  font-style: italic;
 }
 main .testProcess {
   display: -webkit-box;
@@ -916,15 +929,28 @@ main .donation p {
   text-align: center;
   margin-bottom: 0.5em;
 }
-main .donation img {
+main .donation .imageAct {
   margin-block: 1.5em;
-  width: 14em;
-  height: 10em;
-  background-color: #5680E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-main .donation img img {
+main .donation .imageAct img {
   width: 100%;
-  height: auto;
+  height: 10em;
+}
+@media screen and (min-width: 768px) {
+  main .donation .imageAct img {
+    height: 15em;
+    width: 60%;
+  }
 }
 @media screen and (min-width: 768px) {
   main .donation .btnWrapper {

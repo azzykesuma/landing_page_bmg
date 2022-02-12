@@ -14,6 +14,7 @@
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css" class="rel">
     <title>Yayasan Bina Muda Gemilang - Home Page</title>
+    <link rel="shortcut icon" href="./asset/image_act/logo.jpg"/>
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
                 <li><a href="./pages/donasi/donasi.html">Donasi</a></li>
             </ul>
         </div>
-        <div class="logo"></div>
+        <div class="logo"><img src="./asset/image_act/logo.jpg" alt="logo"></div>
     </header>
     <div class="tablet--navBar">
         <ul id="nav__about--tablet">
@@ -213,46 +214,35 @@
                           <ul class="splide__list">
                               <li class="splide__slide">
                                   <div class="testimonyList">
-                                      <div class="image"></div>
-                                      <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
+                                      <div class="image"><img src="./asset/image_act/doctor.jpg" alt=""></div>
+                                      <p class="statement">"bekerja dengan BMG sangat menyenangkan karena mereka bisa menjangkau komunitas yang awalnya sulit dijangkau"</p>
+                                      <p class="nama">Ahmad Hambali</p>
                                       <p class="work">Staff Puskesmas Balaraja</p>
                                   </div>
                               </li>
                               <li class="splide__slide">
                                   <div class="testimonyList">
-                                      <div class="image"></div>
-                                      <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
-                                      <p class="work">Staff Puskesmas Balaraja</p>
+                                      <div class="image"><img src="./asset/image_act/doctor2.jpg" alt=""></div>
+                                      <p class="statement">"berkat BMG, kita menjadi sangat terbantu untuk menemukan kasus HIV di tangerang"</p>
+                                      <p class="nama">Yuli Setyani</p>
+                                      <p class="work">Staff Puskesmas Curug</p>
                                   </div>
                               </li>
                               <li class="splide__slide">
                                   <div class="testimonyList">
-                                      <div class="image"></div>
-                                      <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
-                                      <p class="work">Staff Puskesmas Balaraja</p>
+                                      <div class="image"><img src="./asset/image_act/doctor3.jpg" alt=""></div>
+                                      <p class="statement">"staff BMG sangat energik dan selalu bersemangat untuk mengajak teman komunitas untuk melakukan test HIV"</p>
+                                      <p class="nama">Hendra Kusuma</p>
+                                      <p class="work">Staff Puskesmas Petir</p>
                                   </div>
                               </li>
                               <li class="splide__slide">
                                   <div class="testimonyList">
-                                      <div class="image"></div>
-                                      <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
-                                      <p class="work">Staff Puskesmas Balaraja</p>
+                                      <div class="image"><img src="./asset/image_act/doctor4.jpg" alt=""></div>
+                                      <p class="statement">"Sukses selalu untuk BMG yang sudah sangat membantu untuk membantu teman-teman komunitas yang ingin akses ARV"</p>
+                                      <p class="nama">Agung Haryono</p>
+                                      <p class="work">Dinas kesehatan kabupaten Tangerang</p>
                                   </div>
-                              </li>
-                              <li class="splide__slide">
-                                  <div class="testimonyList">
-                                      <div class="image"></div>
-                                      <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
-                                      <p class="work">Staff Puskesmas Balaraja</p>
-                                  </div>
-                              </li>
-                              <li class="splide__slide">
-                                  <div class="testimonyList">
-                                      <div class="image"></div>
-                                      <p class="statement">lorem ipsum jayas mahe blabla jayas mahe blabla jayas mahe blabla</p>
-                                      <p class="work">Staff Puskesmas Balaraja</p>
-                                  </div>
-                              </li>
                           </ul>
                     </div>
                 </div>       
@@ -265,8 +255,8 @@
                     <li>
                         <ion-icon name="document-text-outline"></ion-icon>
                         <div class="listInformation">
-                            <h3>Isi form <span>disini</span></h3>
-                            <p>klik <span>disini</span> untuk mengetahui siapa petugas lapangan terdekat.</p>
+                            <h3>Isi form <a href="./pages/layananTest/test.html">disini</a></h3>
+                            <p>seteklah anda mengisi form, maka selanjutnya kami akan mencarikan petugas lapangan terdekat untuk anda.</p>
                         </div>
                     </li>
                     <li>
@@ -310,7 +300,7 @@
                 </div>
             </div>
             <div class="heroImage">
-                <img src="./asset/undraw_In_progress_re_m1l6.png" alt="">
+                <img src="./asset/image_act/process.jpeg" alt="">
             </div>
         </section>
         <section class="petugas">
@@ -508,12 +498,23 @@
     </footer>
     <!-- splide -->
     <script>
+        const media = window.matchMedia("(min-width: 768px)");
         document.addEventListener( 'DOMContentLoaded', function() {
             var elms = document.getElementsByClassName( 'splide' );
             for ( var i = 0; i < elms.length; i++ ) {
-                var splide = new Splide(elms[i], {
+                var splide = new Splide(elms[0], {
                     type: 'loop',
                     perPage: 3,
+                    rewind : true,
+                }).mount();
+                var splide = new Splide(elms[1], {
+                    type: 'loop',
+                    perPage: 3,
+                    rewind : true,
+                }).mount();
+                var splide = new Splide(elms[2], {
+                    type: 'loop',
+                    perPage: 1,
                     rewind : true,
                 }).mount();       
             }
