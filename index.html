@@ -13,6 +13,7 @@
     <!-- splide -->
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css" class="rel">
+
     <title>Yayasan Bina Muda Gemilang - Home Page</title>
     <link rel="shortcut icon" href="./asset/image_act/logo.jpg"/>
 </head>
@@ -498,7 +499,7 @@
     </footer>
     <!-- splide -->
     <script>
-        const media = window.matchMedia("(min-width: 768px)");
+        import Splide from '@splidejs/splide';
         document.addEventListener( 'DOMContentLoaded', function() {
             var elms = document.getElementsByClassName( 'splide' );
             for ( var i = 0; i < elms.length; i++ ) {
