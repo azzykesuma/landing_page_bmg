@@ -127,3 +127,12 @@ closeBtn.addEventListener('click', (e) => {
     e.preventDefault();
     form.classList.remove('open')
 })
+
+// alerts
+
+
+const donasi = document.querySelector('.CTA_DONATE');
+donasi.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('Fitur ini belum tersedia')
+})

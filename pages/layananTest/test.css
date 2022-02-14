@@ -149,6 +149,38 @@ a {
   font-size: 0.8em;
   background-color: transparent;
 }
+.formTest .formItem input::-webkit-input-placeholder {
+  color: #fff;
+}
+.formTest .formItem input::-moz-placeholder {
+  color: #fff;
+}
+.formTest .formItem input:-ms-input-placeholder {
+  color: #fff;
+}
+.formTest .formItem input::-ms-input-placeholder {
+  color: #fff;
+}
+.formTest .formItem input::placeholder {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .formTest .formItem input::-webkit-input-placeholder {
+    font-size: 1em;
+  }
+  .formTest .formItem input::-moz-placeholder {
+    font-size: 1em;
+  }
+  .formTest .formItem input:-ms-input-placeholder {
+    font-size: 1em;
+  }
+  .formTest .formItem input::-ms-input-placeholder {
+    font-size: 1em;
+  }
+  .formTest .formItem input::placeholder {
+    font-size: 1em;
+  }
+}
 .formTest .formItem select {
   width: 50%;
 }
@@ -165,6 +197,10 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.formTest .formItem .ktp,
+.formTest .formItem .test {
+  margin-bottom: 1em;
 }
 .formTest button {
   margin-block: 1em;

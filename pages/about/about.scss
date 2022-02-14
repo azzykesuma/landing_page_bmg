@@ -256,11 +256,16 @@ h2 {
     ul {
         list-style-type: disc;
         margin-left: 1em;
+        
         li {
             color : $white;
             font-family: $body_font;
             margin-bottom: 1em;
             font-size: 1em;
+
+            @include mQ($tablet) {
+                font-size: 1.2em;
+            }
         }
     }
 

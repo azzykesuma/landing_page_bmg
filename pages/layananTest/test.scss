@@ -59,6 +59,14 @@ a {
             background-color: transparent;
         }
 
+        input::placeholder {
+            color : $white;
+
+            @include mQ($tablet) {
+                font-size: 1em;
+            }
+        }
+
         select {
             width : 50%;
         }
@@ -73,6 +81,10 @@ a {
             }
         }
 
+        .ktp,
+        .test {
+            margin-bottom: 1em;
+        }
     }
     button {
         margin-block: 1em;
