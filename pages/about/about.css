@@ -260,6 +260,7 @@ h2 {
   position: absolute;
   top: 4em;
   left: 8.3em;
+  overflow-x: hidden;
 }
 #nav__about--tablet li,
 #nav__Test--tablet li,

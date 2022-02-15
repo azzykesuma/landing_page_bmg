@@ -17,7 +17,6 @@ time, mark, audio, video {
   font-size: 14px;
   font: inherit;
   vertical-align: baseline;
-  overflow-x: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -335,6 +334,7 @@ h2 {
   position: absolute;
   top: 4em;
   left: 8.3em;
+  overflow-x: hidden;
 }
 #nav__about--tablet li,
 #nav__Test--tablet li,
@@ -770,6 +770,9 @@ main .testimony .innerTest {
       -ms-flex-pack: center;
           justify-content: center;
 }
+main .testimony .overflow {
+  overflow-x: hidden;
+}
 main .testimony .testimonyList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,7 +972,7 @@ footer {
   background-color: #1B122B;
   padding: 1em;
   color: #fff;
-  height: 100%;
+  overflow-x: hidden;
 }
 footer h4 {
   font-family: "Arvo", serif;

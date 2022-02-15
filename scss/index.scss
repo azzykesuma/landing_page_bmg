@@ -294,6 +294,10 @@ main {
             justify-content: center;
         }
 
+        .overflow {
+            overflow-x: hidden;
+        }
+
         .testimonyList {
             display: flex;
             flex-direction: column;
@@ -468,7 +472,7 @@ footer {
     background-color: $footerBcg;
     padding : $padding;
     color : $white;
-    height : 100%;
+    overflow-x: hidden;
 
     h4 {
         font-family: $header_font;
