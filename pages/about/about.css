@@ -6,6 +6,11 @@
   height: auto;
   width: 300px;
 }
+@media (orientation: landscape) {
+  .heroImage img {
+    width: 200px;
+  }
+}
 @media screen and (min-width: 768px) {
   .heroImage img {
     width: 350px;

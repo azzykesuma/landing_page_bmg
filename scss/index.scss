@@ -270,6 +270,10 @@ main {
 
             img {
                 width: 100%;
+
+                @media (orientation : landscape) {
+                    width: 80%;
+                }
             }
         }
 
@@ -342,6 +346,7 @@ main {
     .testProcess {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding : $padding;
         background-color: $secondBcgColor;
         
@@ -456,6 +461,10 @@ main {
                 @include mQ($tablet) {
                     height : 15em;
                     width : 60%;
+                }
+
+                @media (orientation : landscape) {
+                    width: 50%;
                 }
             }
         }

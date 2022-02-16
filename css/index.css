@@ -80,6 +80,11 @@ p {
   height: auto;
   width: 300px;
 }
+@media (orientation: landscape) {
+  .heroImage img {
+    width: 200px;
+  }
+}
 @media screen and (min-width: 768px) {
   .heroImage img {
     width: 350px;
@@ -739,6 +744,11 @@ main .kenapaVct .heroImage {
 main .kenapaVct .heroImage img {
   width: 100%;
 }
+@media (orientation: landscape) {
+  main .kenapaVct .heroImage img {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 768px) {
   main .kenapaVct {
     -webkit-box-orient: horizontal;
@@ -824,6 +834,9 @@ main .testProcess {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1em;
   background-color: #84CEEB;
 }
@@ -955,6 +968,11 @@ main .donation .imageAct img {
   main .donation .imageAct img {
     height: 15em;
     width: 60%;
+  }
+}
+@media (orientation: landscape) {
+  main .donation .imageAct img {
+    width: 50%;
   }
 }
 @media screen and (min-width: 768px) {

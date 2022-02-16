@@ -9,6 +9,10 @@
         height: auto;
         width: 300px;
 
+        @media (orientation : landscape) {
+            width: 200px;
+        }
+
         @include mQ($tablet) {
             width : 350px;
         }
